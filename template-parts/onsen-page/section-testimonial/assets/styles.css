@@ -1,0 +1,254 @@
+.onsen-testimonial {
+}
+
+.onsen-testimonial__leaf--left {
+  position: absolute;
+  /* bottom: -6.2rem; */
+  bottom: 0;
+  left: 0;
+  height: 29.67356rem;
+  width: auto;
+}
+
+.onsen-testimonial__leaf--right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 29.67356rem;
+  width: auto;
+}
+
+.onsen-testimonial__cloud--desktop {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: auto;
+}
+
+.onsen-testimonial__cloud--mobile {
+  display: none;
+}
+
+.onsen-testimonial__container {
+  position: relative;
+  max-width: 84.375rem;
+  margin: 0 auto;
+}
+
+.onsen-testimonial__video {
+  position: relative;
+  height: 33.9375rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.onsen-testimonial__video-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.onsen-testimonial__video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6.5rem;
+  height: 6.5rem;
+  object-fit: cover;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.onsen-testimonial__video-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+  z-index: 2;
+}
+
+.onsen-testimonial__video-embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 2;
+}
+
+.onsen-testimonial__media-swiper {
+  position: relative;
+  height: 33.9375rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.onsen-testimonial__media-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.onsen-testimonial__media-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.onsen-testimonial__quote {
+  height: 31.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.onsen-testimonial__swiper {
+  width: 100%;
+  height: 10rem;
+}
+
+.onsen-testimonial__swiper .swiper-slide {
+}
+
+.onsen-testimonial__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.onsen-testimonial__text {
+  text-align: center;
+  font-family: SVN-Optima;
+  font-size: 2.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.055rem;
+  background: linear-gradient(90deg, #2d6635 62.13%, #a0cc5a 85.78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.onsen-testimonial__author {
+  display: flex;
+  align-items: center;
+  margin-top: 1.375rem;
+}
+
+.onsen-testimonial__icon {
+  width: 0.5625rem;
+  height: 0.5625rem;
+  flex-shrink: 0;
+}
+
+.onsen-testimonial__icon--right {
+  transform: rotate(180deg);
+}
+
+.onsen-testimonial__name {
+  color: #000;
+  text-align: center;
+  font-family: SVN-Optima;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.02375rem;
+  margin: 0 1.06rem;
+}
+
+@media (max-width: 640px) {
+  .onsen-testimonial {
+    padding: 0 1rem;
+  }
+
+  .onsen-testimonial__leaf--left {
+    position: absolute;
+    /* bottom: -6.2rem; */
+    bottom: 0;
+    left: 0;
+    height: 11.34231rem;
+    width: auto;
+  }
+
+  .onsen-testimonial__leaf--right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 11.77094rem;
+    width: auto;
+  }
+
+  .onsen-testimonial__cloud--desktop {
+    display: none;
+  }
+
+  .onsen-testimonial__cloud--mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: auto;
+  }
+
+  .onsen-testimonial__video {
+    height: 12.0625rem;
+    border-radius: 0.38113rem;
+  }
+
+  .onsen-testimonial__media-swiper {
+    height: 12.0625rem;
+    border-radius: 0.38113rem;
+  }
+
+  .onsen-testimonial__video-play {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .onsen-testimonial__quote {
+    height: 10.19rem;
+    margin-top: 5rem;
+    justify-content: start;
+  }
+  
+  .onsen-testimonial__swiper {
+    height: 3.875rem;
+  }
+
+  .onsen-testimonial__text {
+    font-size: 1.625rem;
+    letter-spacing: -0.0325rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .onsen-testimonial__name {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.03125rem;
+    margin: 0 1.25rem;
+  }
+}

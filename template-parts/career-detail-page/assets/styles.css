@@ -1,0 +1,92 @@
+@import url("../section-content/assets/styles.css");
+@import url("../section-form/assets/styles.css");
+@import url("../section-other/assets/styles.css");
+@import url("../../components/career-item/assets/styles.css");
+@import url("../../careers-page/section-gallery/assets/styles.css");
+
+main {
+  background: #f8f6f1;
+}
+
+.career-gallery {
+  display: none;
+}
+
+.cta-career {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  main {
+    background: #fdf7f1;
+  }
+
+  .career-gallery {
+    display: block;
+  }
+
+  .cta-career {
+    position: fixed;
+    bottom: 3.75rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 0.625rem;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.1);
+    z-index: 20;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition:
+      opacity 0.4s ease,
+      transform 0.4s ease,
+      visibility 0.4s;
+  }
+
+  .cta-career.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .cta-career__button {
+    display: flex;
+    height: 2.625rem;
+    padding: 0 0.25rem 0 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    background: #2d6635;
+    box-shadow: 0 3.06px 26.928px 0 rgba(232, 203, 130, 0.39);
+  }
+
+  .cta-career__button span {
+    color: #fff;
+    font-family: SVN-Optima;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 0.9rem */
+    letter-spacing: -0.015rem;
+  }
+
+  .cta-career__button-icon {
+    width: 2.00806rem;
+    height: 1.96031rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background: #f0fbf2;
+    filter: drop-shadow(0 3.06px 9.486px rgba(0, 0, 0, 0.25));
+  }
+
+  .cta-career__button-icon svg {
+    width: 0.5rem;
+    height: 0.8125rem;
+  }
+}

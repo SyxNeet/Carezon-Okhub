@@ -1,0 +1,243 @@
+.blog-detail__content-main h2,
+.blog-detail__content-main h3,
+.blog-detail__content-main h4,
+.blog-detail__content-main h5,
+.blog-detail__content-main h6 {
+    color: var(--Text-Body-T1, #2e2e2e);
+    font-style: normal;
+    font-weight: 500;
+}
+.blog-detail__content-main h2 {
+    font-size: 1.5rem;
+    line-height: 130%;
+    letter-spacing: -0.06rem;
+}
+.blog-detail__content-main h3 {
+    font-size: 1.375rem;
+    line-height: 100%;
+    letter-spacing: -0.0275rem;
+}
+.blog-detail__content-main h4 {
+    font-size: 1.25rem;
+    line-height: 100%;
+    letter-spacing: -0.025rem;
+}
+.blog-detail__content-main h5 {
+    font-size: 1.125rem;
+    line-height: 100%;
+    letter-spacing: -0.0225rem;
+}
+.blog-detail__content-main h6 {
+    font-size: 1rem;
+    line-height: 100%;
+    letter-spacing: -0.02rem;
+}
+.blog-detail__content-main a,
+.blog-detail__content-main p,
+.blog-detail__content-main li,
+.blog-detail__content-main td {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.01rem;
+}
+.blog-detail__content-main a {
+    color: var(--Color-Blue, #338fe5);
+    text-decoration: underline;
+}
+.blog-detail__content-main p,
+.blog-detail__content-main li {
+    color: var(--text-Body-Body, #3a3026);
+}
+.blog-detail__content-main ul {
+    list-style: disc;
+}
+.blog-detail__content-main ol {
+    list-style: decimal;
+}
+.blog-detail__content-main li {
+    margin-left: 1.75rem;
+}
+.blog-detail__content-main div:has(img) {
+    border-radius: 1rem;
+    background: rgba(175, 208, 180, 0.6);
+    overflow: hidden;
+}
+.blog-detail__content-main img {
+    max-width: 100%;
+    height: auto;
+}
+.blog-detail__content .wp-caption-text {
+    color: var(--text-Body-Body, #3a3026);
+    text-align: center;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.00813rem;
+    padding: 0.5rem 1rem;
+}
+.blog-detail__content-main blockquote {
+    padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+    border-radius: 1rem;
+    background: var(--Main-Colors-Primary-6, #24522a);
+}
+.blog-detail__content-main blockquote * {
+    color: #fff;
+    font-family: SVN-Optima;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.5rem */
+    letter-spacing: -0.04688rem;
+}
+.blog-detail__content-main blockquote::before {
+    content: "";
+    display: block;
+    width: 1.13438rem;
+    height: 0.99688rem;
+    background-image: url("/wp-content/uploads/2025/10/quote.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 1.25rem;
+}
+.blog-detail__content-main h2 + *,
+.blog-detail__content-main h3 + *,
+.blog-detail__content-main h4 + *,
+.blog-detail__content-main h5 + *,
+.blog-detail__content-main h6 + * {
+    margin-top: 0.875rem;
+}
+.blog-detail__content-main * + p:not(.wp-caption-text) {
+    margin-top: 0.5rem;
+}
+.blog-detail__content-main * + blockquote,
+.blog-detail__content-main blockquote + * {
+    margin-top: 2.5rem;
+}
+.blog-detail__content-main * + h2,
+.blog-detail__content-main * + h3,
+.blog-detail__content-main * + h4,
+.blog-detail__content-main * + h5,
+.blog-detail__content-main * + h6 {
+    margin-top: 1rem;
+}
+.blog-detail__content-main *:not(blockquote) + div:has(img) {
+    margin-top: 0.875rem;
+}
+.blog-detail__content-main .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+.blog-detail__content-main table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: auto;
+}
+.blog-detail__content-main table tr {
+    border: 1px solid #ccc;
+    padding: 0.35em;
+}
+.blog-detail__content-main table td,
+.blog-detail__content-main table th {
+    border: 1px solid #ccc;
+    padding: 0.625em;
+}
+.blog-detail__content-main table td {
+    vertical-align: top;
+}
+.blog-detail__content-main table th {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 639.98px) {
+    .blog-detail__content-main h2,
+    .blog-detail__content-main h3,
+    .blog-detail__content-main h4,
+    .blog-detail__content-main h5,
+    .blog-detail__content-main h6 {
+        color: var(--text-body-text-text-body-100, #1a1a1a);
+        font-weight: 600;
+    }
+    .blog-detail__content-main h2 {
+        font-size: 1.125rem;
+        letter-spacing: -0.045rem;
+    }
+    .blog-detail__content-main h3 {
+        font-size: 1rem;
+        letter-spacing: -0.02rem;
+    }
+    .blog-detail__content-main h4 {
+        font-size: 0.875rem;
+        line-height: 150%;
+        letter-spacing: -0.0175rem;
+    }
+    .blog-detail__content-main h5 {
+        font-size: 0.8125rem;
+        line-height: 150%;
+        letter-spacing: -0.01625rem;
+    }
+    .blog-detail__content-main h6 {
+        font-size: 0.8125rem;
+        line-height: 150%;
+        letter-spacing: -0.01625rem;
+    }
+    .blog-detail__content-main a,
+    .blog-detail__content-main p,
+    .blog-detail__content-main li,
+    .blog-detail__content-main td {
+        font-size: 0.8125rem;
+        font-weight: 400;
+        letter-spacing: -0.00813rem;
+    }
+    .blog-detail__content-main li {
+        margin-left: 1.25rem;
+    }
+    .blog-detail__content-main div:has(img) {
+        border-radius: 0.75rem;
+    }
+    .blog-detail__content-main img {
+        max-width: 100%;
+        height: auto;
+    }
+    .blog-detail__content .wp-caption-text {
+        font-size: 0.625rem;
+        letter-spacing: -0.00625rem;
+    }
+    .blog-detail__content-main blockquote {
+        padding: 1rem 1rem 1.25rem 1rem;
+        border-radius: 0.75rem;
+    }
+    .blog-detail__content-main blockquote * {
+        color: #FFF;
+		font-family: SVN-Optima;
+		font-size: 0.875rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%; /* 1.3125rem */
+		letter-spacing: -0.04688rem;
+    }
+    .blog-detail__content-main h2 + *,
+    .blog-detail__content-main h3 + *,
+    .blog-detail__content-main h4 + *,
+    .blog-detail__content-main h5 + *,
+    .blog-detail__content-main h6 + * {
+        margin-top: 0.625rem;
+    }
+    .blog-detail__content-main * + p:not(.wp-caption-text) {
+        margin-top: 0.5rem;
+    }
+    .blog-detail__content-main * + blockquote,
+    .blog-detail__content-main blockquote + * {
+        margin-top: 1rem;
+    }
+    .blog-detail__content-main *:not(blockquote) + div:has(img) {
+        margin-top: 1rem;
+    }
+}

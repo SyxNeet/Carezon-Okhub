@@ -1,0 +1,653 @@
+/* =============================================================
+   Section: Philosophy
+   Desktop: 2-col sticky scroll (left sticky + right stacking cards)
+             + Benefits 3-col row
+   Mobile:  Vertical stack, no sticky
+   ============================================================= */
+
+/* ── Outer wrapper ─────────────────────────────────────────── */
+.section-philosophy {
+  position: relative;
+  width: 100%;
+  overflow: visible; /* allow floating CTA to bleed below */
+  z-index: 5;
+  margin-top: -5rem;
+  background: white;
+}
+
+/* ── Green panel (covers both Part 1 + Part 2) ─────────────── */
+.section-philosophy__green-panel {
+  position: relative;
+  margin: 3.125rem 1.5rem 0; /* top: 50px, L/R: 24px */
+  border-radius: 0.75rem;
+  /* NOTE: overflow must NOT be hidden — would break position:sticky on children.
+       Border-radius visual clipping is handled via clip-path on a pseudo-element. */
+  box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Background image (thẻ <img> thay cho background-image) — tách riêng để
+   không phá position:sticky ở các con. */
+.section-philosophy__green-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 0.75rem;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Part 1: Philosophy Cards ──────────────────────────────── */
+.section-philosophy__cards-section {
+  position: relative;
+  z-index: 1;
+  /* Height driven by right column (1090px) — left col is sticky within it */
+}
+
+.section-philosophy__cards-inner {
+  display: flex;
+  align-items: flex-start;
+  padding: 4.5625rem 4rem 0; /* 64px */
+}
+
+/* Left sticky column */
+.section-philosophy__left {
+  width: 32.4375rem; /* 519px */
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+.section-philosophy__left-inner {
+  padding-top: 4.25rem; /* 100px */
+  padding-bottom: 6.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-philosophy__subtitle {
+  font-family: "SVN-Pleasent", sans-serif;
+  font-size: 3.5rem; /* 56px */
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.4375rem; /* 23px */
+}
+
+.section-philosophy__description {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 1.875rem; /* 30px */
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.0375rem; /* -0.6px */
+  color: #ffffff;
+}
+
+/* ── Lotus line-art decoration (left column) ───────────────── */
+.section-philosophy__lotus {
+  position: relative;
+  margin-top: 3.5rem; /* 56px — dưới phần mô tả */
+  pointer-events: none;
+  width: 28.66444rem;
+  height: 42.30644rem;
+  margin-left: -5rem;
+}
+
+.section-philosophy__lotus img {
+  width: 100%;
+  height: 100%;
+}
+
+/* inset: top right bottom left (giống section-about) */
+.section-philosophy__lotus-g1 {
+  position: absolute;
+  top: 23.92%;
+  right: 63.61%;
+  bottom: 43.71%;
+  left: 20.87%;
+}
+.section-philosophy__lotus-g2 {
+  position: absolute;
+  top: 24.77%;
+  right: 0;
+  bottom: 20.18%;
+  left: 55.35%;
+}
+.section-philosophy__lotus-g3 {
+  position: absolute;
+  top: 0;
+  right: 10.13%;
+  bottom: 28.82%;
+  left: 0;
+}
+.section-philosophy__lotus-g4 {
+  position: absolute;
+  top: 34.27%;
+  right: 0.38%;
+  bottom: 11.64%;
+  left: 27.91%;
+}
+.section-philosophy__lotus-g5 {
+  position: absolute;
+  top: 10.36%;
+  right: 17.73%;
+  bottom: 23.36%;
+  left: 26.33%;
+}
+.section-philosophy__lotus-g6 {
+  position: absolute;
+  top: 54.9%;
+  right: 35.82%;
+  bottom: 6.86%;
+  left: 6.67%;
+}
+.section-philosophy__lotus-g7 {
+  position: absolute;
+  top: 43.54%;
+  right: 10.05%;
+  bottom: 0;
+  left: 66.1%;
+}
+
+.section-philosophy__lotus-g1 img,
+.section-philosophy__lotus-g2 img,
+.section-philosophy__lotus-g3 img,
+.section-philosophy__lotus-g4 img,
+.section-philosophy__lotus-g5 img,
+.section-philosophy__lotus-g6 img,
+.section-philosophy__lotus-g7 img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Right stacking cards column */
+.section-philosophy__cards-right {
+  flex: 1;
+  position: relative;
+  padding-left: 0;
+  height: fit-content;
+  padding-bottom: 15.25rem;
+}
+
+/* Card stack wrappers — each sticky at a different top offset */
+.section-philosophy__card-sticky-1 {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 2rem; /* 105px */
+}
+
+.section-philosophy__card-sticky-2 {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1.5rem; /* 199px */
+}
+
+.section-philosophy__card-sticky-3 {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1.5rem; /* 294px */
+}
+
+/* Individual philosophy card */
+.section-philosophy__card {
+  width: 100%;
+  border-radius: 1.25rem; /* 20px */
+  padding: 2rem; /* 32px */
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+
+.section-philosophy__card--1 {
+  background-color: #aedbc7;
+  height: 16.1875rem; /* 259px */
+}
+
+.section-philosophy__card--2 {
+  background-color: #fbf1cb;
+  height: 17.875rem; /* 286px */
+}
+
+.section-philosophy__card--3 {
+  background-color: #d4da7a;
+  height: 17.875rem; /* 286px */
+}
+
+.section-philosophy__card-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 0.75rem; /* 12px between title row and body */
+  color: #113917;
+}
+
+.section-philosophy__card-number {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 3.125rem; /* 50px */
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.0625rem; /* -1px */
+  flex-shrink: 0;
+  margin-right: 0.75rem; /* 12px gap */
+}
+
+.section-philosophy__card-title {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 1.875rem; /* 30px */
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.0375rem; /* -0.6px */
+  flex-shrink: 0;
+}
+
+.section-philosophy__card-body {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #3a3026;
+  width: 100%;
+}
+
+/* ── Part 2: Benefits Section ──────────────────────────────── */
+.section-philosophy__benefits {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 9.0625rem; /* 145px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-philosophy__benefits-inner {
+  width: 91.125rem; /* 1458px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-philosophy__benefits-title {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 3.125rem; /* 50px */
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.0625rem; /* -1px */
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3.75rem; /* 60px */
+}
+
+.section-philosophy__benefits-row {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Individual benefit card */
+.section-philosophy__benefit-card {
+  width: 29.375rem; /* 470px */
+  flex-shrink: 0;
+  border-radius: 0.75rem; /* 12px */
+  padding-top: 2.5rem; /* 40px */
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+  padding-bottom: 1rem; /* 16px */
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0 0.25rem 0.375rem rgba(0, 0, 0, 0.12));
+  background-size:
+    24.2384rem 24.9002rem,
+    auto;
+  background-position:
+    top left,
+    top left;
+}
+
+.section-philosophy__benefit-card + .section-philosophy__benefit-card {
+  margin-left: 1.5rem; /* 24px */
+}
+
+.section-philosophy__benefit-card--1 {
+  background-image:
+    url("/assets/images/restaurant-page/d-philosophy-bg-image.jpg"),
+    linear-gradient(90deg, #6e8ec6 0%, #6e8ec6 100%);
+}
+
+.section-philosophy__benefit-card--2 {
+  background-color: #f8eec7;
+}
+
+.section-philosophy__benefit-card--3 {
+  background-color: #d6ebd9;
+}
+
+.section-philosophy__benefit-text {
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+  margin-bottom: 1.5rem; /* 24px */
+  display: flex;
+  flex-direction: column;
+}
+
+.section-philosophy__benefit-card-title {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.03rem; /* -0.48px */
+  margin-bottom: 0.75rem; /* 12px */
+}
+
+.section-philosophy__benefit-card--1 .section-philosophy__benefit-card-title {
+  color: #ffffff;
+}
+
+.section-philosophy__benefit-card--2 .section-philosophy__benefit-card-title,
+.section-philosophy__benefit-card--3 .section-philosophy__benefit-card-title {
+  color: #113917;
+}
+
+.section-philosophy__benefit-body {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.section-philosophy__benefit-card--1 .section-philosophy__benefit-body {
+  color: #ffffff;
+}
+
+.section-philosophy__benefit-card--2 .section-philosophy__benefit-body,
+.section-philosophy__benefit-card--3 .section-philosophy__benefit-body {
+  color: #113917;
+}
+
+/* Benefit image wrapper */
+.section-philosophy__benefit-img-wrap {
+  width: 100%;
+  position: relative;
+  border-radius: 0.5rem; /* 8px */
+  overflow: hidden;
+  /* 438:274 ratio — padding-top trick */
+  height: 0;
+  padding-top: 62.5571%; /* 274/438 * 100 */
+  flex-shrink: 0;
+}
+
+.section-philosophy__benefit-img-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Floating CTA button ───────────────────────────────────── */
+/* Positioned at bottom of section, overlapping into section-offers */
+.section-philosophy__floating-cta {
+  position: absolute;
+  bottom: -6.5rem; /* overlap below section */
+  right: 4rem; /* 64px from right */
+  width: 16.5rem; /* 264px */
+  height: 11.125rem; /* 178px */
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Initial reveal states (JS adds .is-animated qua IntersectionObserver) ── */
+/* Mobile @media block resets these to opacity:1 / transform:none */
+.section-philosophy__card--2,
+.section-philosophy__card--3 {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition:
+    opacity 600ms ease,
+    transform 600ms cubic-bezier(0.47, 0, 0.01, 1.01);
+}
+
+.section-philosophy__card--2.is-animated,
+.section-philosophy__card--3.is-animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Hover states ───────────────────────────────────────────── */
+@media (min-width: 1024px) {
+  .section-philosophy__benefit-card {
+    transition:
+      transform 400ms cubic-bezier(0.47, 0, 0.01, 1.01),
+      filter 400ms cubic-bezier(0.47, 0, 0.01, 1.01);
+  }
+
+  .section-philosophy__benefit-card:hover {
+    transform: translateY(-0.25rem);
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.18));
+  }
+}
+
+/* ── Focus visible ──────────────────────────────────────────── */
+.section-philosophy__floating-cta:focus-visible {
+  outline: 2px solid #ff4601;
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   Mobile overrides — only properties that differ from desktop
+   ============================================================ */
+@media screen and (max-width: 639.98px) {
+  .section-philosophy {
+    margin-top: 0;
+  }
+
+  /* Green panel: no side margin on mobile */
+  .section-philosophy__green-panel {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding-bottom: 10rem;
+  }
+
+  /* Part 1: no fixed height, no 2-col layout */
+  .section-philosophy__cards-section {
+    height: auto;
+  }
+
+  .section-philosophy__cards-inner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  /* Left column: not sticky on mobile */
+  .section-philosophy__left {
+    width: 100%;
+    position: static;
+    height: auto;
+  }
+
+  .section-philosophy__left-inner {
+    padding: 2.5rem 1rem 0; /* 40px top, 16px sides */
+  }
+
+  .section-philosophy__subtitle {
+    font-size: 3rem; /* 48px */
+    margin-bottom: 1.25rem; /* 20px */
+  }
+
+  .section-philosophy__description {
+    font-size: 1.375rem; /* 22px */
+    letter-spacing: -0.0625rem; /* -1px */
+  }
+
+  /* Lotus ẩn trên mobile */
+  .section-philosophy__lotus {
+    display: none;
+  }
+
+  /* Right column: static, stack vertically */
+  .section-philosophy__cards-right {
+    width: 100%;
+    min-height: 0;
+    padding: 0 1rem; /* no top padding — title block above provides spacing */
+    margin-top: 1.5rem;
+  }
+
+  .section-philosophy__card-sticky-1,
+  .section-philosophy__card-sticky-2,
+  .section-philosophy__card-sticky-3 {
+    position: static;
+    padding-top: 0;
+  }
+
+  .section-philosophy__card-sticky-2,
+  .section-philosophy__card-sticky-3 {
+    margin-top: 0.75rem; /* 12px gap between cards */
+  }
+
+  /* Card sizing: no fixed height, natural height */
+  .section-philosophy__card {
+    height: auto;
+    border-radius: 1rem; /* 16px */
+    padding: 1rem; /* 16px */
+  }
+
+  .section-philosophy__card-number {
+    font-size: 2rem; /* 32px */
+    letter-spacing: -0.04rem; /* -0.64px */
+    margin-right: 0.5rem; /* 8px */
+    font-weight: 600;
+  }
+
+  .section-philosophy__card-title {
+    font-size: 1.375rem; /* 22px */
+    font-weight: 500;
+    letter-spacing: -0.0625rem; /* -1px */
+  }
+
+  .section-philosophy__card-body {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  /* No GSAP initial-state on mobile — show cards directly */
+  .section-philosophy__card--2,
+  .section-philosophy__card--3 {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Benefits: single column stack */
+  .section-philosophy__benefits {
+    padding-bottom: 0;
+    margin-top: 2.5rem;
+  }
+
+  .section-philosophy__benefits-inner {
+    width: 100%;
+    padding: 0; /* no top padding — parent container spacing handles vertical gap */
+  }
+
+  .section-philosophy__benefits-title {
+    font-size: 1.5rem; /* 24px mobile: 24px */
+    letter-spacing: -0.03rem; /* -0.48px */
+    margin-bottom: 1.5rem; /* 24px */
+  }
+
+  .section-philosophy__benefits-row {
+    flex-direction: row; /* horizontal scroll on mobile */
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section-philosophy__benefit-card {
+    width: 18.75rem; /* 300px on mobile */
+    flex-shrink: 0;
+    padding: 0.75rem; /* 12px all sides */
+    height: 20.3526rem;
+  }
+
+  .section-philosophy__benefit-card + .section-philosophy__benefit-card {
+    margin-left: 0.625rem; /* 10px on mobile */
+  }
+
+  .section-philosophy__benefit-text {
+    padding-left: 0; /* 8px */
+    padding-right: 0; /* 8px */
+    margin-bottom: 1rem; /* 16px */
+  }
+
+  .section-philosophy__benefit-card-title {
+    font-size: 1rem; /* 16px */
+    line-height: 1.3;
+    letter-spacing: -0.02rem; /* -0.32px */
+    margin-bottom: 0.5rem; /* 8px */
+  }
+
+  .section-philosophy__benefit-body {
+    font-size: 0.875rem; /* 14px */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+
+  /* Floating CTA: repositioned on mobile */
+  .section-philosophy__floating-cta {
+    width: 9.375rem; /* 150px */
+    height: 6rem; /* 96px */
+    right: 1rem;
+    bottom: -3rem;
+  }
+
+  .section-philosophy__green-bg {
+    border-radius: 0;
+  }
+}
+
+/* ── Reduced motion ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .section-philosophy *,
+  .section-philosophy *::before,
+  .section-philosophy *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .section-philosophy__card--2,
+  .section-philosophy__card--3 {
+    opacity: 1;
+    transform: none;
+  }
+}

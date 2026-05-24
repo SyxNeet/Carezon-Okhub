@@ -1,0 +1,591 @@
+.therapy-member-section-wrapper {
+  background: #ffffff;
+  max-width: 100%;
+  font-family: "SVN-Optima";
+  padding: 2.5rem 0;
+}
+.therapy-member-section {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  max-width: 96.9375rem;
+  padding: 5rem 6.25rem;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.section-container {
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 3.125rem;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.0625rem;
+  text-align: center;
+  margin: 0 auto 3.75rem auto;
+  max-width: 40.9375rem;
+  background: linear-gradient(90deg, #2d6635 0%, #b7d10f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-heading.no-text-gradient {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
+  color: #2d6635;
+  max-width: 100%;
+}
+.combo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.75rem 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: auto;
+}
+
+.combo-card {
+  flex: 1;
+  background-size: cover;
+  border-radius: 0.75rem;
+  box-shadow: 2px 12px 30px 0 rgba(0, 0, 0, 0.16);
+  position: relative;
+  max-height: 18.875rem;
+}
+
+.card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  pointer-events: none;
+}
+
+.card-bg.mobile {
+  display: none;
+}
+
+.card-inner {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+
+.card-text {
+  width: 22.6875rem;
+  padding: 1.5rem;
+  color: #fff;
+  z-index: 2;
+}
+
+.card-label {
+  color: #fdfdfd;
+  font-size: 1.875rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  line-height: 2.4375rem;
+  letter-spacing: -0.0375rem;
+}
+
+.card-desc {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  letter-spacing: -0.02rem;
+  opacity: 0.7;
+  margin-bottom: 0.75rem;
+  color: #fdfdfd;
+}
+
+.benefit-list {
+  list-style: none;
+  margin-bottom: 2.5rem;
+}
+
+.benefit-list li {
+  font-size: 0.875rem;
+  line-height: 150%;
+  position: relative;
+  color: #fff;
+  display: flex;
+  margin-bottom: 0.75rem;
+  align-items: center;
+}
+
+.benifit-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.3125rem;
+  height: 1.3125rem;
+  border-radius: 1.3125rem;
+  background: #fff2c1;
+  box-shadow: 2px 2px 9.6px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 0.75rem;
+}
+
+.benifit-item-icon svg {
+  width: 0.57969rem;
+  height: 0.422rem;
+  object-fit: contain;
+}
+
+.person-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28.125rem;
+  height: 21.375rem;
+  object-fit: contain;
+}
+
+/* Wide Card */
+.combo-wide-card {
+  border-radius: 0.75rem;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  min-height: 18.0625rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.combo-wide-card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  pointer-events: none;
+}
+
+.combo-wide-card-bg.mobile {
+  display: none;
+}
+
+.wide-card-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 54.125rem;
+  backdrop-filter: blur(30px);
+  mask-image: linear-gradient(to left, black 0%, black 65%, transparent 100%);
+  background: linear-gradient(
+    270deg,
+    rgba(5, 51, 5, 0.78) 0%,
+    rgba(5, 51, 5, 0) 100%
+  );
+  border-radius: 0 0.75rem 0.75rem 0;
+  z-index: 1;
+}
+
+.wide-card-content {
+  position: relative;
+  z-index: 2;
+  max-width: 41.1875rem;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.member-wrapper {
+  margin-top: 5rem;
+}
+
+.member-swiper {
+  border-radius: 0.75rem;
+}
+
+.member-swiper .swiper-slide {
+  width: 27.14583rem;
+  height: auto;
+  display: flex;
+}
+
+.member-slider-container {
+  position: relative;
+}
+
+.member-card {
+  position: relative;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 30.59214rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.member-card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.member-card-title {
+  font-size: 1.5rem;
+  color: #3a3026;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.03rem;
+  margin-bottom: 0.75rem;
+}
+
+.member-benefit-list {
+  list-style: none;
+}
+
+.member-card-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 1.3125rem;
+  height: 1.3125rem;
+  border-radius: 1.3125rem;
+  background: #5e7d57;
+  box-shadow: 2px 2px 9.6px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 0.75rem;
+  margin-top: 0.4rem;
+}
+
+.member-card-item-icon svg {
+  width: 0.57969rem;
+  height: 0.422rem;
+}
+
+.member-benefit-list li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  font-size: 1.125rem;
+  line-height: 150%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.member-benefit-list li {
+  color: #3a3026;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.member-benefit-list li:last-child {
+  margin-bottom: 0;
+}
+
+.member-card-thumb {
+  height: 15.75rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.member-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: #fff;
+  border-radius: 0.78569rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.member-nav-btn svg {
+  width: 1.57144rem;
+  height: 1.57144rem;
+}
+
+.member-prev {
+  left: -4.125rem;
+}
+
+.member-next {
+  right: -4.125rem;
+}
+.btn-link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.btn-link span {
+  color: #FFF;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; 
+  letter-spacing: -0.02rem;
+}
+
+.btn-link svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .btn-link:hover span {
+    text-decoration: underline;
+  }
+  .member-nav-btn:hover {
+    opacity: 0.8;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .therapy-member-section-wrapper {
+    padding: 1.5rem 0 2.5rem;
+  }
+  .therapy-member-section {
+    border-radius: 0.5rem;
+    max-width: 22.4375rem;
+    padding: 2.5rem 0;
+    box-shadow: none;
+  }
+
+  .section-heading {
+    font-size: 1.625rem;
+    letter-spacing: -0.0325rem;
+    margin: 0 auto 1.25rem;
+    max-width: 18.9375rem;
+  }
+
+  .section-heading.no-text-gradient {
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: initial;
+    color: #2d6635;
+    max-width: 100%;
+  }
+  .combo-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .combo-card {
+    flex: unset;
+    width: 100%;
+    height: auto;
+    min-height: 37.5rem;
+    max-height: none;
+    border-radius: 0.5rem;
+  }
+  
+  .card-bg {
+    display: none;
+  }
+
+  .card-bg.mobile {
+    border-radius: 0.5rem;
+    display: block;
+  }
+  
+  .card-inner {
+    flex-direction: column;
+  }
+
+  .card-text {
+    width: 100%;
+    padding: 1.25rem 1rem;
+  }
+
+  .card-label {
+    font-size: 1.375rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.65rem;
+    letter-spacing: -0.0275rem;
+  }
+
+  .combo-wide-card .card-label {
+    margin-bottom: 0.75rem;
+  }
+
+  .card-desc {
+    letter-spacing: -0.03125rem;
+  }
+
+  .benefit-list {
+    margin-bottom: 1.25rem;
+  }
+
+  .person-img {
+    position: static;
+    width: 21.4375rem;
+    height: 21.375rem;
+    object-fit: contain;
+    object-position: bottom;
+    margin-top: auto;
+  }
+
+  /* Wide Card */
+  .combo-wide-card {
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    min-height: 37.5rem;
+    align-items: start;
+    justify-content: flex-start;
+  }
+  
+  .member-card-item-icon {
+      width: 1.125rem;
+      height: 1.125rem;
+      margin-top: 0.2rem;
+      
+  }
+  
+  .combo-wide-card-bg {
+    display: none;
+  }
+  .combo-wide-card-bg.mobile {
+    display: block;
+    border-radius: 0.5rem;
+  }
+
+  .wide-card-overlay {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: 34.6875rem;
+    backdrop-filter: blur(30px);
+    mask-image: linear-gradient(
+      to bottom,
+      black 0%,
+      black 55%,
+      rgba(0,0,0,0.2) 80%,
+      transparent 100%
+    );
+    background: linear-gradient(
+      180deg,
+      rgba(5, 51, 5, 0.78) 0%,
+      rgba(5, 51, 5, 0) 100%
+    );
+    border-radius: 0.5rem 0.5rem 0 0;
+    z-index: 1;
+  }
+
+  .wide-card-content {
+    max-width: 100%;
+    padding: 1.25rem 1rem;
+  }
+
+  .member-wrapper {
+    margin-top: 3rem;
+  }
+
+  .member-swiper {
+    border-radius: 0;
+    padding: 0 0.5rem;
+    overflow-x: auto;
+  }
+
+  .member-swiper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .member-swiper .swiper-wrapper {
+    width: max-content;
+  }
+
+  .member-swiper .swiper-slide {
+    height: auto;
+    width: 19.375rem;
+    display: flex;
+  }
+
+  .member-swiper .swiper-slide:not(:last-child) {
+    margin-right: 0.625rem;
+  }
+
+  .member-slider-container {
+    position: relative;
+  }
+
+  .member-card {
+    position: relative;
+    width: 19.375rem;
+    padding: 1.25rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 0.75rem;
+    min-height: 22.71476rem;
+  }
+
+  .member-card-body {
+    padding: 0 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .member-card-title {
+    font-size: 1.125rem;
+    letter-spacing: -0.0225rem;
+  }
+
+  .member-card-item-icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 1.125rem;
+    box-shadow: 1.714px 1.714px 8.229px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 0.625rem;
+  }
+
+  .member-card-item-icon svg {
+    width: 0.49688rem;
+    height: 0.36175rem;
+  }
+
+  .member-benefit-list li {
+    margin-bottom: 0.625rem;
+    font-size: 0.875rem;
+  }
+
+  .member-card-thumb {
+    height: 11.0625rem;
+  }
+
+  .member-nav-btn {
+    display: none;
+  }
+}

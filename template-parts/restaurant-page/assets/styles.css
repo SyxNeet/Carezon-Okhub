@@ -1,0 +1,9 @@
+@import url("../section-banner/assets/styles.css");
+@import url("../section-menu/assets/styles.css");
+@import url("../section-about/assets/styles.css");
+@import url("../section-philosophy/assets/styles.css");
+@import url("../section-offers/assets/styles.css");
+
+main {
+  overflow: hidden;
+}

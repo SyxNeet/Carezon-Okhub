@@ -1,0 +1,1313 @@
+@import url("../../../template-parts/front-page/section-feedback/assets/styles.css");
+
+.move-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  background: #fff;
+  width: 3.64731rem;
+  height: 3.64731rem;
+}
+
+.move-to-top__icon {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  z-index: 6;
+}
+.footer.not-front {
+  overflow: visible !important;
+}
+.footer.not-front .footer-top {
+  display: none !important;
+}
+.footer__leaf {
+  position: absolute;
+  bottom: 13.88rem;
+  left: 0;
+  z-index: 10;
+  width: 23rem;
+  height: 25.8125rem;
+  object-fit: cover;
+  transform: translate(0px, 0) !important;
+  pointer-events: none;
+}
+
+.footer-top {
+  position: relative;
+  height: 66.375rem;
+}
+
+.footer-top__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-top__roof {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 12.4375rem;
+  object-fit: cover;
+}
+
+.footer-top__content {
+  position: relative;
+  z-index: 2;
+  padding-top: 20.28vw;
+  padding-right: 14.16vw;
+}
+
+.footer-top__title {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  width: 38.71363rem;
+  color: white;
+}
+
+.footer-top__title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-top__title .footer-top__line-1 {
+  display: block;
+  margin-bottom: 1.25rem;
+  margin-left: 9.36rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.95919rem;
+  line-height: 3.95919rem;
+  font-family: "SVN-Ameyallinda Signature";
+}
+
+.footer-top__title .footer-top__line-2 {
+  display: block;
+  margin-bottom: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.96169rem;
+  line-height: 3.96169rem;
+  font-family: "SVN-Ameyallinda Signature";
+}
+
+.footer-top__title .footer-top__line-2 span:last-child {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.6635rem;
+  line-height: 4.6635rem;
+  font-family: "SVN-Optima";
+  letter-spacing: -0.11556rem;
+  text-transform: uppercase;
+}
+
+.footer-top__title .footer-top__line-3 {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.6635rem;
+  line-height: 4.6635rem;
+  font-family: "SVN-Optima";
+  letter-spacing: -0.11556rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-top__layer {
+  position: absolute;
+  top: 18.19vw;
+  right: 6.59vw;
+  width: 39.34925rem;
+  height: 21.37919rem;
+}
+
+.footer-bottom {
+  position: relative;
+  height: 51.875rem;
+}
+
+.footer-bottom__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-bottom__container {
+  position: absolute;
+  top: -13.06rem;
+  z-index: 5;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.footer-bottom__inner {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 0.75rem;
+  background: #fcf4ed;
+  max-width: 98rem;
+  height: 38.375rem;
+  overflow: hidden;
+}
+
+.footer-bottom__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.75rem;
+  background: var(--background-image);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.footer-bottom__content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 3;
+  height: 100%;
+}
+
+.footer-bottom__decoration-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: calc(42rem - 8.25rem);
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-bottom__decoration-2 {
+  position: absolute;
+  bottom: 0;
+  left: 50.99rem;
+  z-index: 2;
+  width: 26.53713rem;
+  height: 35.91456rem;
+  object-fit: cover;
+}
+
+.footer-bottom__header {
+  padding: 2.94rem 0 0 4.06rem;
+}
+
+.footer-bottom__logo {
+  width: auto;
+  height: 3.88413rem;
+}
+
+.footer-bottom__main {
+  padding: 0 6rem 1.16rem 4.06rem;
+}
+
+.footer-bottom__service {
+  margin-bottom: 2.53rem;
+  width: 38rem;
+}
+
+.footer-bottom__service-title {
+  margin-bottom: 1.88rem;
+  color: #010a02;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: "SVN-Optima";
+  letter-spacing: -0.02rem;
+}
+
+.footer-bottom__service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.44rem;
+  row-gap: 1.38rem;
+}
+
+.footer-bottom__service-item {
+  display: flex;
+  align-items: center;
+  color: #113917;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-family: "SVN-Optima";
+  letter-spacing: -0.02rem;
+}
+
+.footer-bottom__service-image {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.75rem;
+  border-radius: 0.48rem;
+  background: #eaeaea;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.footer-bottom__service-item:first-child .footer-bottom__service-image img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+
+.footer-bottom__service-item:nth-child(2) .footer-bottom__service-image img {
+  width: 2.46069rem;
+  height: 1.57844rem;
+  object-fit: cover;
+}
+
+.footer-bottom__service-item:nth-child(3) .footer-bottom__service-image img {
+  width: 2.84325rem;
+  height: 1.82388rem;
+  object-fit: cover;
+}
+
+.footer-bottom__service-item:nth-child(4) .footer-bottom__service-image img {
+  width: 2.80006rem;
+  height: 1.79113rem;
+  object-fit: cover;
+}
+
+.footer-bottom__service-item:nth-child(5) .footer-bottom__service-image img {
+  width: 2.80006rem;
+  height: 1.79113rem;
+  object-fit: cover;
+}
+
+.footer-bottom__service-item:nth-child(6) .footer-bottom__service-image img {
+  width: 3.8015rem;
+  height: 2.43175rem;
+  object-fit: cover;
+}
+
+.footer-bottom__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 1.5rem;
+}
+
+/* .footer-bottom__address {
+  margin-bottom: 1.97rem;
+} */
+
+.footer-bottom__address-city {
+  margin-bottom: 1.25rem;
+  color: #010a02;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-family: "SVN-Optima";
+  letter-spacing: -0.025rem;
+}
+
+.footer-bottom__address-detail {
+  display: block;
+  width: 20.84763rem;
+  color: #575757;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 120%;
+  font-family: "SVN-Optima";
+  letter-spacing: -0.02rem;
+}
+
+.footer-bottom__social-title {
+  margin-bottom: 0.88rem;
+  color: #010a02;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: "SVN-Optima";
+  letter-spacing: -0.02rem;
+}
+
+.footer-bottom__icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.38rem;
+  border: 1px solid rgba(47, 57, 48, 0.33);
+  border-radius: 0.75rem;
+  background: #fff;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.footer-bottom__icon {
+  justify-content: center;
+  align-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.footer-bottom__icon img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.footer-bottom__icon:last-child {
+  margin-right: 0;
+}
+
+.footer-bottom__copyright {
+  display: flex;
+  align-items: center;
+  color: #113917AB;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: "SVN-Optima";
+  letter-spacing: -0.0175rem;
+}
+
+.footer-bottom__copyright span {
+  margin-right: 0.44rem;
+}
+
+.footer-bottom__copyright span:last-child {
+  margin-right: 0;
+}
+
+.footer-bottom__btn::before {
+  position: absolute;
+  z-index: 0;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  cursor: pointer;
+  inset: 0;
+  border-radius: 4.29525rem;
+  background: radial-gradient(
+    120.17% 120.17% at 15.93% -15.88%,
+    #dbf8c6 0%,
+    #3d542c 62.97%
+  );
+  padding: 10px;
+  pointer-events: none;
+  content: "";
+}
+
+.footer-bottom__btn:hover {
+  transition-duration: 0.4s;
+  box-shadow: 0 -1px 52.5px 0 rgba(243, 221, 113, 0.77) !important;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.footer-bottom__btn {
+  display: flex;
+  position: absolute;
+  top: 19.81rem;
+  right: 0;
+  left: 64.5rem;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center;
+  z-index: 10;
+  animation: pulse 2s infinite ease-in-out;
+  will-change: transform, box-shadow;
+  cursor: pointer;
+  border: none;
+  border-radius: 62.5rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  overflow: hidden;
+}
+
+.footer-bottom__btn-bg {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  padding: 0.5rem;
+  inset: 0;
+  background: var(--Button-special-Green, radial-gradient(120.17% 120.17% at 15.93% -15.88%, var(--Foundation-Primary-Soft, #E6FBE0) 8.65%, var(--Foundation-Primary-Dark, #113917) 89.9%));
+}
+
+.footer-bottom__btn-bg img {
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.footer-bottom__btn-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  color: #f7f7f7;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 120%;
+  /* PC/Caption/10/10-R */
+  font-family: SVN-Optima;
+  text-align: center;
+  /* 0.75rem */
+  text-transform: uppercase;
+}
+
+.footer-bottom__btn-content span {
+  flex-shrink: 0;
+  margin-top: 0.64rem;
+  background: #f4f1e6;
+  width: 100%;
+  height: 0.0355rem;
+}
+
+.footer-bottom__phone {
+  display: flex;
+  position: absolute;
+  top: 14rem;
+  left: 61.5rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  width: fit-content;
+}
+
+.footer-bottom__phone-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom__phone-link {
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 3.30644rem;
+  /* PC/SpecialText/36-Medium */
+  font-family: SVN-Optima;
+  font-kerning: none;
+  margin-bottom: 0.25rem;
+  font-feature-settings: "salt" on;
+  text-align: center;
+  /* 146.954% */
+}
+
+.footer-bottom__phone-desc {
+  color: var(--greyscaletext-0, #fff);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.6875rem;
+  line-height: 120%;
+  /* PC/Caption/11/11-Medium-UP */
+  font-family: SVN-Optima;
+  text-align: center;
+  /* 0.825rem */
+  text-transform: uppercase;
+}
+
+.popup__booking {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup__booking.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__booking-container {
+  position: relative;
+  box-shadow: 9px 15px 72.1px 0 rgba(10, 55, 7, 0.09);
+  border-radius: 2rem;
+  background: #275d36;
+  width: 91.14713rem;
+  height: auto;
+  overflow: hidden;
+}
+
+.popup__close-btn {
+  display: flex;
+  position: absolute;
+  top: 0.94rem;
+  right: 1.19rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  margin: 0;
+  border-radius: 0.9375rem;
+  padding: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.popup__close-btn img {
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+.popup__booking .booking__form-item-input[name="message"] {
+  border: 1px solid #eee;
+  border-radius: var(--border-300, 0.75rem);
+  background: #fafaf7;
+  padding: 1rem 1.25rem;
+  /* 1.3125rem */
+  height: 5rem;
+  color: #3a3026;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size-sm, 0.875rem);
+  line-height: 150%;
+  font-family: SVN-Optima;
+}
+.popup__booking .booking__form-item-textarea {
+  border: none;
+  padding: 0;
+  height: auto;
+}
+
+.popup__booking-background {
+  position: relative;
+  bottom: -1px;
+  width: 100%;
+  height: auto;
+}
+.popup__booking .booking__form {
+  top: 3rem;
+  bottom: 3rem;
+  justify-content: flex-start;
+}
+.popup__booking .booking__form-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.popup__booking .booking__form-item {
+  margin-bottom: 0.75rem;
+}
+.popup__booking .booking__form-title {
+  margin-bottom: 2.56rem;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 120%;
+  font-family: SVN-Optima;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  /* 3.6rem */
+  letter-spacing: -0.06rem;
+  text-align: center;
+}
+.cta {
+  display: flex;
+  position: fixed;
+  right: 0.625rem;
+  bottom: 0rem;
+  flex-direction: column;
+  transform: translateY(20px);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+  padding: 3.75rem 0.5rem 1.85rem 0.5rem;
+  pointer-events: none;
+}
+
+.cta.show {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.cta__btn-booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 15.56rem;
+  box-shadow: 0 4.149px 19.832px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 0.62231rem;
+  background: linear-gradient(90deg, #a6c696 0%, #0c7651 100%);
+  padding: 0;
+  width: 4.875rem;
+  height: 4.875rem;
+  transform-origin: 50% 0%;
+  will-change: transform;
+  animation: cta-booking-wiggle 2.8s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 120%;
+  font-family: "Quicksand";
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: auto;
+}
+
+@keyframes cta-booking-wiggle {
+  0%,
+  74% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  78% {
+    transform: translate3d(0, 1px, 0) rotate(-7deg);
+  }
+
+  82% {
+    transform: translate3d(0, 1px, 0) rotate(6deg);
+  }
+
+  86% {
+    transform: translate3d(0, 1px, 0) rotate(-4deg);
+  }
+
+  90% {
+    transform: translate3d(0, 1px, 0) rotate(3deg);
+  }
+
+  94% {
+    transform: translate3d(0, 0, 0) rotate(-1.5deg);
+  }
+
+  98%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta__btn-booking {
+    animation: none;
+  }
+}
+
+.cta__btn-booking span:first-of-type {
+  display: none;
+}
+
+.cta__btn-booking--icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  border-radius: 0.41669rem;
+  background: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.cta__btn-booking--icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+
+.cta__btn-booking--icon-mobile {
+  display: none;
+}
+
+.cta__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.cta__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1.1rem;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+  width: 3.64731rem;
+  height: 3.64731rem;
+}
+
+.cta__btn:last-child {
+  margin-bottom: 0;
+}
+
+.cta__btn-call {
+  border: 1.829px solid #2d6635;
+}
+
+.cta__btn-call .cta__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: cover;
+}
+
+.cta__btn-zalo {
+  position: relative;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.12);
+  background-image: var(--icon);
+  background-position: center;
+  background-size: cover;
+}
+
+.cta__btn-zalo .cta__icon {
+  width: 2.0625rem;
+  height: 2.0625rem;
+  object-fit: cover;
+}
+
+.cta__notification {
+  position: absolute;
+  top: 0.63rem;
+  right: 0.81rem;
+  filter: drop-shadow(0 0 11.011px rgba(78, 242, 64, 0.6));
+  border-radius: 50%;
+  background-color: #78dd00;
+  width: 0.82581rem;
+  height: 0.82581rem;
+}
+
+.cta__btn-messenger {
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.cta__btn-messenger .cta__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cta__btn-booking--wrapper {
+  display: flex;
+
+  width: 100%;
+}
+.cta__btn-booking--socials {
+  display: none;
+}
+.cta__btn-booking--socials-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.75rem;
+  background: #fff;
+  border-left: 1px solid #f4f4f4;
+}
+
+@media (min-width: 640px) {
+  .footer-bottom__service-item:nth-child(1) span {
+    display: inline-block;
+    width: 5.5rem;
+  }
+  .footer-bottom__service-item:nth-child(3) span {
+    display: inline-block;
+    width: 5.5rem;
+  }
+}
+@media (max-width: 639px) {
+  .cta__notification {
+    width: 0.62263rem;
+    height: 0.62263rem;
+  }
+  .cta__btn-booking--wrapper {
+    height: 3.75rem;
+  }
+  .cta__btn-booking--socials {
+    display: flex;
+  }
+  .move-to-top {
+    display: none;
+  }
+
+  .cta__btn {
+    margin-bottom: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  .footer-bottom__phone,
+  .footer-bottom__btn {
+    display: block;
+  }
+
+  .footer__leaf {
+    display: none;
+  }
+
+  .footer-top {
+    height: 19.25081rem;
+  }
+
+  .footer-top__roof {
+    height: 6.8125rem;
+  }
+
+  .footer-top__content {
+    padding: 0;
+  }
+
+  .footer-top__title {
+    top: 7rem;
+    margin-left: 3.69rem;
+    width: 16.3125rem;
+  }
+
+  .footer-top__title .footer-top__line-1 {
+    display: block;
+    margin-bottom: 0.56rem;
+    margin-left: 3.27rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.38725rem;
+    line-height: 1.38331rem;
+    font-family: "SVN-Ameyallinda Signature";
+  }
+
+  .footer-top__title .footer-top__line-2 {
+    display: block;
+    margin-bottom: 0.01rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.38725rem;
+    line-height: 1.38419rem;
+    font-family: "SVN-Ameyallinda Signature";
+  }
+
+  .footer-top__title .footer-top__line-2 span:last-child {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.62644rem;
+    line-height: 1.62944rem;
+    font-family: "SVN-Optima";
+    letter-spacing: -0.04038rem;
+    text-transform: uppercase;
+  }
+
+  .footer-top__title .footer-top__line-3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.62644rem;
+    line-height: 1.62944rem;
+    font-family: "SVN-Optima";
+    letter-spacing: -0.04038rem;
+    text-transform: uppercase;
+    margin-left: 3.27rem;
+    text-align: left;
+  }
+
+  .footer-top__layer {
+    position: absolute;
+    top: 6.08rem;
+    right: 3.88rem;
+    width: 13.7485rem;
+    height: 7.46981rem;
+  }
+
+  .footer-bottom {
+    position: relative;
+    height: 100%;
+    margin-top: -2rem;
+  }
+
+  .footer-bottom__image {
+    display: none;
+  }
+
+  .footer-bottom__container {
+    position: relative;
+    top: 0;
+    padding: 0rem;
+  }
+
+  .footer-bottom__inner {
+    border-radius: 1rem 1rem 0 0;
+    min-height: 68.125rem;
+  }
+
+  /* .footer-bottom__background {
+	background: url("./assets/images/footer/background-mobile.webp")
+	lightgray cover no-repeat;
+} */
+
+  .footer-bottom__content {
+    height: fit-content;
+  }
+
+  .footer-bottom__decoration-1 {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: -5.625rem;
+    width: 31.14263rem;
+    height: 28.87981rem;
+    object-fit: cover;
+  }
+
+  .footer-bottom__decoration-2 {
+    display: none;
+  }
+
+  .footer-bottom__decoration-2-mobile {
+    display: block;
+    position: absolute;
+    right: 3.65rem;
+    bottom: -1rem;
+    z-index: 2;
+    width: 20.66213rem;
+    height: 27.9635rem;
+    object-fit: cover;
+  }
+
+  .footer-bottom__header {
+    padding: 2.06rem 4.31rem 0 4.31rem;
+  }
+
+  .footer-bottom__main {
+    margin-top: 2.05rem;
+    padding: 0 0.91rem 0 1.03rem;
+  }
+
+  .footer-bottom__service {
+    margin-bottom: 2.32rem;
+    width: 100%;
+  }
+
+  .footer-bottom__service-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-bottom__service-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2.32rem;
+    width: 100%;
+  }
+
+  .footer-bottom__service-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-bottom__service-item span {
+    max-width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.0175rem;
+  }
+
+  .footer-bottom__contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom__address {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-bottom__address-city {
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+  }
+
+  .footer-bottom__address-detail {
+    max-width: 21.125rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+  }
+
+  .footer-bottom__social-title {
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-bottom__icons {
+  }
+
+  .footer-bottom__icon {
+    margin-right: 0.31rem;
+  }
+
+  .footer-bottom__icon img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+
+  .footer-bottom__copyright {
+    margin-top: 1.5rem;
+  }
+
+  .footer-bottom__btn {
+    display: flex;
+    position: absolute;
+    top: 52.32rem;
+    left: 7.68rem;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    border-radius: 4.29525rem;
+    background: radial-gradient(
+      120.17% 120.17% at 15.93% -15.88%,
+      #dbf8c6 0%,
+      #3d542c 62.97%
+    );
+    width: 8.5905rem;
+    height: 8.5905rem;
+    overflow: hidden;
+  }
+
+  .footer-bottom__btn-bg {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    inset: 0;
+  }
+
+  .footer-bottom__btn-bg img {
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  .footer-bottom__btn-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    color: #f7f7f7;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 150%;
+    font-family: SVN-Optima;
+    text-align: center;
+    /* 1.125rem */
+    text-transform: uppercase;
+  }
+
+  .footer-bottom__btn-content span {
+    margin-top: 0.5rem;
+    background: #f4f1e6;
+    width: 100%;
+    height: 0.04881rem;
+  }
+
+  .footer-bottom__phone {
+    display: flex;
+    position: absolute;
+    top: 47.6rem;
+    left: 7.6rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: fit-content;
+  }
+
+  .footer-bottom__phone-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-bottom__phone-link {
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 2.7rem;
+    font-family: "SVN-Optima";
+    letter-spacing: -0.0675rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .footer-bottom__phone-desc {
+    font-weight: 500;
+    font-size: 0.625rem;
+    font-family: SVN-Optima;
+
+    color: var(--greyscaletext-0, #fff);
+    font-style: normal;
+
+    line-height: 0.80475rem;
+
+    letter-spacing: 0.00669rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .popup__booking .booking__form {
+    top: 2rem;
+    bottom: 2rem;
+  }
+  .popup__booking {
+    padding: 1rem;
+  }
+
+  .popup__booking-container {
+    border-radius: 0.75rem;
+    width: 100%;
+    height: 38rem;
+  }
+
+  .popup__close-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .popup__booking .booking__form-option-button {
+    width: 100%;
+  }
+  .popup__booking-background {
+    display: none;
+  }
+  .popup__booking .booking__form-title {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+  .cta {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    pointer-events: auto;
+  }
+
+  .cta__btn-booking {
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 0;
+    box-shadow: 0 5px 23.9px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(90deg, #a6c696 0%, #0c7651 100%);
+
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    animation: none;
+  }
+
+  .cta__btn-booking span:first-of-type {
+    display: inline-block;
+  }
+
+  .cta__btn-booking span:last-of-type {
+    display: none;
+  }
+
+  .cta__btn-booking--icon-wrapper {
+    display: none;
+  }
+
+  .cta__btn-booking--icon {
+    display: none;
+  }
+
+  .cta__btn-booking--icon-mobile {
+    display: block;
+    width: 2.1875rem;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0.75rem;
+  }
+
+  .cta__socials {
+    display: none;
+  }
+  .cta__btn-booking span {
+    font-family: SVN-Optima;
+    font-weight: 600;
+  }
+  .cta__btn-booking--text {
+    color: #fff;
+    /* MB/14/14-M */
+    font-family: SVN-Optima;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 1.05rem */
+  }
+  .cta__btn-booking--text p:nth-child(2) {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+  }
+}

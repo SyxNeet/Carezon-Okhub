@@ -1,0 +1,29 @@
+/*@import url("../section-banner/assets/styles.css");*/
+/*@import url("../section-pricing/assets/styles.css");*/
+@import url("../section-service-pricing/assets/styles.css");
+@import url("../section-restaurant/assets/styles.css");
+@import url("../section-other-services/assets/styles.css");
+@import url("../section-booking/assets/styles.css");
+
+/*main {*/
+/*  background-image: url("/wp-content/uploads/2026/03/banggiadichvu-scaled.webp");*/
+/*  background-size: cover;*/
+/*  background-position: center;*/
+/*  background-repeat: no-repeat;*/
+/*  z-index: 5;*/
+/*}*/
+
+main {
+    background: #FAF4EE;
+    position: relative;
+    background-image: url(/wp-content/uploads/2026/04/Home-3-scaled.webp);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 639.98px) {
+  main {
+    background-image: url(/wp-content/uploads/2026/04/MB-HOME-scaled.webp);
+  }
+}

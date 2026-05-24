@@ -1,0 +1,642 @@
+.experience {
+  position: relative;
+  background: #fff7f0;
+  padding: 5rem 0 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__section-title {
+    display: inline-block;
+    text-align: center;
+    font-kerning: none;
+    font-family: SVN-Optima;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.0625rem;
+    background: linear-gradient(90deg, #2D6635 62.13%, #A0CC5A 85.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: pre-line;
+    margin: 0 auto 2.5rem;
+}
+
+.experience__container {
+  display: flex;
+  width: 100%;
+  max-width: 96.9rem;
+  margin: 0 auto;
+  padding-bottom: 3.125rem;
+}
+
+.experience__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 0.875rem;
+  column-gap: 0.8375rem;
+  width: 35.9375rem;
+  height: 39.3125rem;
+  margin-right: 1rem;
+}
+
+.experience__list:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.experience__item {
+  position: relative;
+  border-radius: 1.5rem;
+  width: 100%;
+}
+
+.experience__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+.experience__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.experience__title {
+  font-family: "SVN-Optima";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.0375rem;
+  margin-bottom: 0.75rem;
+}
+
+.experience__link {
+  font-family: "SVN-Optima";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.0175rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.experience__link:hover {
+	opacity: .7;
+}
+
+.experience__link span {
+  margin-right: 0.375rem;
+  color: #FFF;
+}
+
+.experience__item--relax .experience__link span,
+.experience__item--vip .experience__link span {
+  color: rgba(0, 0, 0, 0.80);
+}
+
+.experience__icon {
+  width: 0.75rem;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Spa  */
+.experience__item--spa {
+  display: flex;
+  align-items: flex-end;
+  height: 19.3125rem;
+}
+
+.experience__spa {
+  width: 100%;
+  height: 19.3125rem;
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.experience__spa .experience__link {
+  color: white;
+}
+
+.experience__icon {
+  width: 0.44738rem;
+}
+
+.experience__spa .experience__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience__spa .experience__content {
+  position: relative;
+  padding: 1.625rem;
+  height: 100%;
+}
+
+.experience__spa .experience__title {
+  color: white;
+  margin-bottom: 0.56rem;
+}
+
+/* Onsen */
+.experience__item--onsen {
+  height: 19.3125rem;
+}
+
+.experience__item--onsen .experience__content {
+  padding: 1.625rem;
+  color: white;
+}
+
+.experience__item--onsen .experience__title {
+  width: 11.1875rem;
+  margin-bottom: 0.56rem;
+}
+
+.experience__item--onsen .experience__image {
+  position: absolute;
+  inset: 0;
+}
+
+/* Relax */
+
+.experience__item--relax {
+  grid-column: span 2;
+  overflow: hidden;
+  height: 19.125rem;
+}
+
+.experience__item--relax .experience__back-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience__item--relax .experience__overlay {
+  position: absolute;
+  inset: 0;
+  /*     background: linear-gradient(
+        110deg,
+        #dfedce 12.72%,
+        rgba(212, 229, 196, 0.95) 21.79%,
+        rgba(28, 82, 25, 0) 92.24%
+    ); */
+  z-index: 1;
+}
+
+.experience__item--relax .experience__front-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.experience__item--relax .experience__content {
+  padding: 1.25rem 1.375rem;
+}
+
+.experience__item--relax .experience__title {
+  color: #094412;
+}
+
+/* Tiktok */
+.experience__tiktok {
+  position: relative;
+  border-radius: 1.5rem;
+  background: rgba(152, 151, 135, 0.20);
+  padding: 0.75rem;
+  margin-right: 1rem;
+}
+
+.experience__tiktok .swiper {
+  width: 21.6875rem;
+  height: 100%;
+  border-radius: 1.5rem;
+  cursor: grab;
+}
+
+.experience__tiktok .swiper-pagination {
+  display: flex;
+  padding: 0.625rem 1.25rem;
+  align-items: center;
+  border-radius: 2rem;
+  border: 0.7px solid rgba(5, 10, 5, 0.1);
+  background: rgba(212, 206, 201, 0.34);
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  bottom: -3.125rem !important;
+}
+
+.experience__tiktok .swiper-pagination-bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #b4aca3 !important;
+  opacity: 1 !important;
+  margin-right: 0.625rem !important;
+  margin-left: 0 !important;
+}
+
+.experience__tiktok .swiper-pagination-bullet:last-child {
+  margin-right: 0 !important;
+}
+
+.experience__tiktok .swiper-pagination-bullet-active {
+  background: #2d6635 !important;
+  opacity: 0.8 !important;
+}
+
+.experience__tiktok .swiper-slide {
+  height: 100%;
+}
+
+.experience__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+/* Korea */
+.experience__item--korea {
+  grid-column: span 2;
+  overflow: hidden;
+  height: 19.3125rem;
+}
+
+.experience__item--korea .experience__back-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience__item--korea .experience__overlay {
+  position: absolute;
+  inset: 0;
+  /*     background: linear-gradient(
+        110deg,
+        #c2925e 12.72%,
+        rgba(194, 146, 94, 0.95) 21.79%,
+        rgba(94, 63, 29, 0.56) 92.24%
+    ); */
+  z-index: 1;
+}
+
+.experience__item--korea .experience__front-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.experience__item--korea .experience__content {
+  padding: 1.625rem 1.5rem;
+  color: white;
+}
+
+.experience__item--korea .experience__title {
+  width: 10.4375rem;
+}
+
+.experience__item--korea .experience__image {
+  position: absolute;
+  inset: 0;
+}
+
+/* VIP */
+.experience__item--vip {
+  background: linear-gradient(
+      254deg,
+      rgba(34, 96, 3, 0.2) 3.37%,
+      rgba(255, 255, 255, 0.2) 87.39%
+    ),
+    radial-gradient(
+      196.83% 195.84% at 50% -50.16%,
+      #79ad74 26.23%,
+      #a4c2a1 71.31%,
+      #3c6c37 100%
+    );
+  height: 19.125rem;
+}
+
+.experience__item--vip .experience__image {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  width: 18.625rem;
+}
+
+.experience__item--vip .experience__content {
+  padding: 1.5rem;
+}
+
+.experience__item--vip .experience__title {
+  color: #3A3026;
+}
+
+/* Restaurant */
+.experience__item--restaurant {
+  height: 19.125rem;
+}
+.experience__item--restaurant .experience__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.experience__item--restaurant .experience__content {
+  color: white;
+  padding: 1.5rem;
+}
+
+.experience__tiktok-swiper-next.swiper-button-disabled,
+.experience__tiktok-swiper-prev.swiper-button-disabled {
+  opacity: 0.35 !important;
+}
+
+.experience__tiktok .experience__tiktok-swiper-next,
+.experience__tiktok .experience__tiktok-swiper-prev {
+  --swiper-navigation-sides-offset: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.625rem;
+  height: 2.5625rem;
+  border-radius: 0.75rem;
+  background: #F0FBF2;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  filter: drop-shadow(0 4px 12.4px rgba(0, 0, 0, 0.25));
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.experience__tiktok .experience__tiktok-swiper-next {
+  right: 0.69rem;
+}
+
+.experience__tiktok .experience__tiktok-swiper-prev {
+  left: 0.69rem;
+  transform: rotate(180deg);
+}
+.experience__tiktok-swiper-next img,
+.experience__tiktok-swiper-prev img {
+  width: 0.5rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.experience__tiktok-swiper-next::after,
+.experience__tiktok-swiper-prev::after {
+  display: none;
+}
+.experience img {
+  user-select: none;
+}
+@media screen and (min-width: 1024px) {
+  .experience__tiktok-swiper:hover .experience__tiktok-swiper-next,
+  .experience__tiktok-swiper:hover .experience__tiktok-swiper-prev {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .experience__iframe {
+    pointer-events: none;
+  }
+
+  .experience *:before,
+  .experience *:after {
+    animation: none !important;
+    transition: none !important;
+    transform: translateZ(0) !important;
+    will-change: auto !important;
+    backface-visibility: visible !important;
+    perspective: none !important;
+  }
+
+  /* Ensure smooth rendering */
+  .experience {
+    transform: translateZ(0);
+    backface-visibility: visible;
+  }
+
+  /* Disable hover effects */
+  .experience a,
+  .experience button,
+  .experience .experience__link {
+    transform: none !important;
+  }
+}
+
+@media screen and (max-width: 639.98px) {
+  .experience__tiktok-swiper-next,
+  .experience__tiktok-swiper-prev {
+    display: none;
+  }
+  .experience {
+    padding: 2.5rem 1rem;
+  }
+  
+  .experience__section-title {
+    text-align: center;
+    font-family: SVN-Optima;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.03rem;
+    margin-bottom: 1.88rem;
+  }
+
+  .experience__container {
+    flex-direction: column;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  .experience__list {
+    width: 100%;
+    margin-right: 0;
+    height: auto;
+    column-gap: 0.5rem;
+    row-gap: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .experience__item {
+    border-radius: 0.9rem;
+  }
+
+  .experience__title {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.0225rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .experience__link {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.015rem;
+  }
+
+  /* Spa */
+  .experience__item--spa {
+    height: 11.6615rem;
+  }
+
+  .experience__spa {
+    height: 100%;
+    border-radius: 0.9rem;
+  }
+  
+  .experience__spa .experience__title {
+    margin-bottom: 0.5rem;
+  }
+
+  .experience__spa .experience__content {
+    padding: 1rem;
+  }
+
+  .experience__spa .experience__image {
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+
+  /* Onsen */
+  .experience__item--onsen {
+    height: 11.6615rem;
+  }
+
+  .experience__item--onsen .experience__content {
+    padding: 1rem;
+  }
+
+  .experience__item--onsen .experience__title {
+    width: 6.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Relax */
+  .experience__item--relax {
+    height: 11.4085rem;
+  }
+
+  .experience__item--relax .experience__content {
+    padding: 0.7125rem 0.8125rem;
+  }
+
+  /* VIP */
+  .experience__item--vip {
+    height: 11.3125rem;
+  }
+
+  .experience__item--vip .experience__content {
+    padding: 0.875rem;
+  }
+
+  .experience__item--vip .experience__title {
+    margin-bottom: 0.375rem;
+  }
+
+  .experience__item--vip .experience__image {
+    width: 10.98931rem;
+    left: 0.575rem;
+  }
+
+  /* Restaurant */
+  .experience__item--restaurant {
+    height: 11.3125rem;
+  }
+
+  .experience__item--restaurant .experience__title {
+    margin-bottom: 0.375rem;
+  }
+
+  .experience__item--restaurant .experience__content {
+    padding: 0.9375rem 0.9175rem;
+  }
+
+  /* Korea */
+  .experience__item--korea {
+    order: 3;
+    height: 11.3125rem;
+  }
+
+  .experience__item--korea .experience__content {
+    padding: 0.975rem 0.875rem;
+  }
+
+  .experience__item--korea .experience__title {
+    width: 6.15rem;
+  }
+
+  /* Tiktok */
+  .experience__container {
+    padding: 0;
+  }
+  
+  .experience__tiktok {
+    margin-top: 0.625rem;
+    margin-right: 0;
+    height: 100%;
+    padding: 0;
+    border-radius: 0.7045rem;
+    order: 1;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .experience__tiktok .swiper {
+    width: 100%;
+    height: 38.14469rem;
+    border-radius: 0.7045rem;
+    border: none;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  
+  .experience__video {
+    border-radius: 0.7045rem;
+  }
+  
+  .experience__tiktok .swiper-pagination {
+    position: static;
+    transform: none !important;
+    width: fit-content !important;
+    height: 1.75rem;
+    padding: 0 1.25rem;
+    margin: 0.625rem auto 0;
+  }
+}

@@ -1,0 +1,72 @@
+.onsen-offers {
+  overflow: hidden;
+  margin-bottom: 6.25rem;
+}
+
+.onsen-offers__container {
+  position: relative;
+  max-width: 84.98rem;
+  margin: 0 auto;
+}
+
+.onsen-offers__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.75rem;
+}
+
+.onsen-offers__title {
+  color: #3a3026;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Pleasent;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5.04438rem;
+  margin-bottom: 0.75rem;
+}
+
+.onsen-offers__description {
+  width:41.625rem;
+  text-align: center;
+  font-family: SVN-Optima;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.0625rem;
+  background: linear-gradient(90deg, #2d6635 70.15%, #a0cc5a 96.86%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 640px) {
+  .onsen-offers {
+    margin-bottom: 3.75rem;
+  }
+
+  .onsen-offers__header {
+    margin-bottom: 1.75rem;
+  }
+
+  .onsen-offers__title {
+    font-size: 1.5rem;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+
+  .onsen-offers__description {
+    width: 16.5625rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    background: linear-gradient(90deg, #2d6635 62.13%, #a0cc5a 85.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -0.25rem;
+  }
+}

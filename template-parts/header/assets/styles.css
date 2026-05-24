@@ -1,0 +1,254 @@
+@import "../../components/main-menu-v2/styles.css";
+
+/* Header Block */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Smoother transitions with longer duration */
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    border-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    visibility 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* Enable hardware acceleration */
+  will-change: transform, background-color, border-color, box-shadow;
+  /* Improve rendering performance */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.header.hide {
+  transform: translateY(-100%) translateZ(0);
+}
+
+.header--smooth-transition {
+  animation: headerSmoothAppear 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    forwards;
+}
+
+@keyframes headerSmoothAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.header__nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 97rem;
+  margin: 0.75rem auto 0;
+  height: 4.4375rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  border: 0.4px solid #c0e3bc;
+}
+.header__left {
+  margin-left: 0.5rem;
+}
+.header__menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(107, 65, 15, 0.27);
+  background: #fff;
+}
+
+.header__menu-btn span {
+  display: none;
+}
+
+.header__menu-icon {
+  width: 1.75rem;
+  height: auto;
+  object-fit: contain;
+}
+.header__center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10.11rem;
+  height: 2.68rem;
+}
+.header__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header__right {
+  margin-right: 0.5rem;
+}
+
+.header__contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.25rem;
+  padding: 0 0.5rem 0 1.5rem;
+  border-radius: 0.75rem;
+  background: #2d6635;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.header__contact-btn p {
+  color: #fff;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.2rem */
+  letter-spacing: -0.03rem;
+  text-transform: uppercase;
+}
+
+.header__contact-btn span {
+  margin-left: 0.75rem;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  overflow: hidden;
+  will-change: transform, background;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.55rem;
+  background: #f0fbf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hiệu ứng hình tròn nở */
+.header__contact-btn span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  /* màu khi hover */
+  background: #b98951;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+
+/* Khi hover toàn bộ button */
+.header__contact-btn {
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header__contact-btn:hover {
+  box-shadow: 0 4px 35.2px 0 rgba(232, 203, 130, 0.39);
+}
+
+.header__contact-btn:hover span::before {
+  width: 4rem;
+  height: 4rem;
+  background: #7fc828;
+  opacity: 1;
+}
+
+.header__contact-btn:active span {
+  transform: scale(0.95);
+  transition-duration: 0.1s;
+}
+
+/* Icon styling */
+.header__contact-btn span img {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+/* Change icon color to white on hover */
+.header__contact-btn:hover span img {
+  filter: brightness(0) invert(1);
+}
+
+.header__contact-btn span img {
+  width: 45%;
+  height: 45%;
+  object-fit: contain;
+  transform: translateX(0.094rem);
+}
+
+@media (max-width: 639.98px) {
+  .header {
+    z-index: 9999;
+  }
+  .header__right {
+    display: none;
+  }
+  .header__nav {
+    flex-direction: row-reverse;
+    margin: 0;
+    height: 3.75rem;
+    border-radius: 0;
+    border: none;
+    max-width: 100%;
+    border: 1px solid #f4f4f4;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 2px 6px 12px 0 rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(2px);
+  }
+  .header__center {
+    position: relative !important;
+    left: auto !important;
+    transform: none !important;
+    margin-left: 1.05rem !important;
+    width: 6.25rem !important;
+  }
+  .header__menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    border-left: 1px solid #f4f4f4;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 0;
+  }
+  .header__menu-btn span {
+    margin-top: 0.38rem;
+    display: block;
+    color: var(--text-body-60, rgba(46, 46, 46, 0.6));
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+  .header__menu-icon {
+    width: 1.9rem;
+  }
+
+  .header__contact-btn {
+    display: none;
+  }
+}

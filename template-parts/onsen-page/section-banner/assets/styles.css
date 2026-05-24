@@ -1,0 +1,274 @@
+/* Onsen Banner Styles */
+.onsen-banner {
+  height: 100vh;
+}
+
+.onsen-banner__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.onsen-banner__swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.onsen-banner__slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.onsen-banner__slide-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.onsen-banner__image,
+.onsen-banner__image-mobile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+}
+
+.onsen-banner__image-mobile {
+  display: none;
+}
+
+.onsen-banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    280deg,
+    rgba(2, 24, 5, 0) 53.26%,
+    rgba(2, 24, 5, 0.4) 66.5%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+.onsen-banner__content {
+  position: absolute;
+  top: 11rem;
+  left: 6.375rem;
+  z-index: 3;
+  width: 31.4375rem;
+}
+
+.onsen-banner__content-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+.onsen-banner__content-item.is-active {
+  opacity: 1;
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.onsen-banner__title {
+  color: #fff;
+  font-kerning: none;
+  font-family: SVN-Optima;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.0625rem;
+}
+
+.onsen-banner__description {
+  color: #fff;
+  font-family: SVN-Optima;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.03rem;
+}
+
+.onsen-banner__decor {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(48%);
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.onsen-banner__decor-image {
+  width: 100%;
+  height: auto;
+}
+
+.onsen-banner__decor-image.mobile {
+  display: none;
+}
+
+.onsen-banner__controls {
+  position: absolute;
+  bottom: 2.31rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0 1.25rem;
+  height: 1.875rem;
+  border-radius: 2rem;
+  border: 0.7px solid rgba(5, 10, 5, 0.1);
+  background: #fff;
+}
+
+.onsen-banner__btn {
+  width: 0.625rem;
+  height: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.onsen-banner__btn .onsen-banner__btn-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.onsen-banner__next {
+  transform: rotate(180deg);
+}
+
+.onsen-banner__pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.onsen-banner__pagination .swiper-pagination-bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #b4aca3;
+  margin: 0 !important;
+  transition: all 0.3s ease;
+}
+
+.onsen-banner__pagination .swiper-pagination-bullet-active {
+  background: #2d6635;
+  opacity: 0.8;
+}
+
+.onsen-banner__play {
+  width: 0.5rem;
+  height: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.onsen-banner__play-icon,
+.onsen-banner__pause-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.onsen-banner__play-icon {
+  display: none;
+}
+
+.onsen-banner__play.is-paused .onsen-banner__pause-icon {
+  display: none;
+}
+
+.onsen-banner__play.is-paused .onsen-banner__play-icon {
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .onsen-banner {
+    height: 50rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .onsen-banner {
+    height: 50.5625rem;
+  }
+
+  .onsen-banner__overlay {
+    background: linear-gradient(
+      0deg,
+      rgba(2, 24, 5, 0) 38.57%,
+      rgba(2, 24, 5, 0.4) 59.83%
+    );
+  }
+
+  .onsen-banner__content {
+    top: 6.87rem;
+    left: 0;
+    width: 100%;
+    padding: 3.125rem 1rem;
+  }
+
+  .onsen-banner__content-item {
+    padding: 0 1rem;
+  }
+
+  .onsen-banner__title {
+    font-size: 2rem;
+    letter-spacing: -0.04rem;
+  }
+
+  .onsen-banner__description {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.02rem;
+  }
+
+  .onsen-banner__decor {
+    transform: translateY(47%);
+  }
+
+  .onsen-banner__controls {
+    bottom: 5.19rem;
+  }
+
+  .onsen-banner__image {
+    display: none;
+  }
+
+  .onsen-banner__image-mobile {
+    display: block;
+  }
+
+  .onsen-banner__decor-image.desktop {
+    display: none;
+  }
+
+  .onsen-banner__decor-image.mobile {
+    display: block;
+  }
+}

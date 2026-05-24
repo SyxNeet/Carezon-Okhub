@@ -1,0 +1,16 @@
+@import url("../section-banner/assets/styles.css");
+@import url("../section-intro/assets/styles.css");
+@import url("../section-services/assets/styles.css");
+@import url("../section-process/assets/styles.css");
+@import url("../section-offers/assets/styles.css");
+@import url("../../components/special-offers/assets/styles.css");
+@import url("../section-testimonial/assets/styles.css");
+@import url("../section-cta/assets/styles.css");
+
+.group-section {
+  position: relative;
+  background-image: url("/wp-content/uploads/2026/05/BG-1-scaled.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}

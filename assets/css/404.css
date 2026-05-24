@@ -1,0 +1,126 @@
+footer {
+	margin-top: -2rem;
+}
+
+.new__desc-short {
+    color: var(--color-azure-45, #666d80);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* TEXT/MB/12/BO */
+    font-family: SVN-Gotham;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 325;
+    line-height: 150%; /* 1.125rem */
+    letter-spacing: -0.03rem;
+}
+
+
+.error-page-section {
+	position: relative;
+}
+.error-page-container {
+	width: 100%;
+	max-width: 82.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100dvh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-top: 6.6875rem;
+}
+.error-page {
+	width: 54.4375rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.error-page__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+.error-page__img {
+	width: 33.2265rem;
+	height: 20.3125rem;
+	object-fit: contain;
+}
+.error-page__des {
+	color: var(--TEXT-300, #6b7280);
+	text-align: center;
+
+	/* TEXT/PC/20/R */
+	font-family: SVN-Gotham;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 450;
+	line-height: 1.8125rem; /* 145% */
+	letter-spacing: -0.03794rem;
+	width: 25.75rem;
+	margin-top: -1rem;
+}
+.main-banner__button {
+	margin-top: 2rem;
+	align-self: center;
+	background: var(--XANH-NGC, #2cbdbe);
+}
+
+.new-blogs__right-title {
+	display: none;
+	color: var(--TEXT-TITLE-MAIN, #2c0f66);
+	font-family: SVN-Gotham;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 400;
+	margin-top: 1rem;
+}
+
+@media (min-width: 640px) and (max-width:1024.1px) {
+	.error-page-container {
+		height: 49.25rem;
+	}
+}
+
+
+@media (max-width: 639.98px) {
+	.error-page-container {
+		flex-direction: column;
+	}
+	.error-page {
+		width: 100%;
+	}
+	.error-page__img {
+		width: 17rem;
+		height: auto;
+	}
+	.error-page__des {
+		font-size: 0.875rem;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 160%; /* 1.4rem */
+		letter-spacing: -0.02725rem;
+		margin-top: -1rem;
+		width: 15.5625rem;
+	}
+	.main-banner__button {
+		height: 2.6465rem;
+	}
+	.main-banner__button .main-banner__button-text {
+		line-height: unset;
+	}
+	.new-blogs__right-title {
+		display: block;
+		margin-top: 2rem;
+	}
+	.new-blogs__right {
+		padding-top: 1rem;
+	}
+}

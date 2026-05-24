@@ -1,0 +1,338 @@
+.section-philosophy {
+  margin-top: 3.69rem;
+}
+
+.section-philosophy__overlay-top {
+  position: absolute;
+  top: -0.44rem;
+  left: 0;
+  width: 100%;
+  height: 11.3125rem;
+  background: linear-gradient(180deg, #343c2f 0%, rgba(52, 60, 47, 0) 72.99%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.section-philosophy__overlay-bottom {
+  position: absolute;
+  bottom: -0.44rem;
+  left: 0;
+  width: 100%;
+  height: 19.875rem;
+  background: linear-gradient(0deg, #e8ddd0 10%, rgba(44, 52, 37, 0) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.section-philosophy__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section-philosophy__bg.mobile {
+  display: none;
+}
+
+.section-philosophy__container {
+  position: relative;
+  max-width: 84.4rem;
+  padding-top: 5.87rem;
+  padding-bottom: 15.19rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.section-philosophy__content {
+  display: flex;
+  width: 31.8125rem;
+  flex-direction: column;
+}
+
+.section-philosophy__title {
+  color: rgba(255, 255, 255, 0.6);
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Pleasent;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 2rem;
+}
+
+.section-philosophy__subtitle {
+  color: #fff;
+  font-kerning: none;
+  font-family: SVN-Optima;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.0625rem;
+  margin-bottom: 2rem;
+}
+
+.section-philosophy__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.section-philosophy__item {
+  display: flex;
+  align-items: start;
+}
+
+.section-philosophy__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.section-philosophy__item-icon {
+  width: 1.68775rem;
+  height: 1.68775rem;
+  border-radius: 1.68775rem;
+  background: #c1d544;
+  box-shadow:
+    0 0.765px 1.99px -1.853px rgba(0, 0, 0, 0.1),
+    0 2.908px 7.561px -3.706px rgba(0, 0, 0, 0.09),
+    0 12.708px 33.04px -5.56px rgba(0, 0, 0, 0.05),
+    0 -3.177px 14.296px 0 rgba(255, 255, 255, 0.49) inset,
+    0 0 0 3.177px rgba(249, 162, 47, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.section-philosophy__item-icon svg {
+  width: 0.875rem;
+  height: 0.6875rem;
+}
+
+.section-philosophy__item-text {
+  color: #fff;
+  font-family: SVN-Optima;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-left: 0.75rem;
+}
+
+.section-philosophy__button {
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem 0 1.5rem;
+  border-radius: 0.75rem;
+  background: #2d6635;
+}
+
+/* Click button */
+.section-philosophy .section-philosophy__button:active {
+  background: #12471a;
+}
+.section-philosophy
+  .section-philosophy__button:active
+  .section-philosophy__button-text {
+  opacity: 0.8;
+}
+.section-philosophy
+  .section-philosophy__button:active
+  .section-philosophy__button-icon::before {
+  background: #66a020;
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+}
+.section-philosophy
+  .section-philosophy__button:active
+  .section-philosophy__button-icon
+  svg {
+  opacity: 0.8;
+  filter: brightness(0) invert(1);
+}
+
+.section-philosophy__button-text {
+  text-align: left;
+  color: #fff;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.03rem;
+  text-transform: uppercase;
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.section-philosophy__button-icon {
+  position: relative;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.5rem;
+  background: #f0fbf2;
+  box-shadow: 0 4.19px 12.99px 0 rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section-philosophy__button-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: #f0fdf4;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  z-index: 0;
+}
+
+.section-philosophy__button-icon svg {
+  width: 1.57144rem;
+  height: 1.57144rem;
+  transition: filter 0.3s ease-out;
+}
+
+/* Hover */
+@media (min-width: 1024px) {
+  .section-philosophy__button:hover .section-philosophy__button-icon::before {
+    width: 4rem;
+    height: 4rem;
+    background: #99d353;
+    opacity: 1;
+  }
+
+  .section-philosophy__button:hover .section-philosophy__button-icon svg {
+    filter: brightness(0) invert(1);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .section-philosophy {
+    margin-top: 0;
+  }
+
+  .section-philosophy__overlay-top {
+    top: 0;
+    width: 100%;
+    height: 4.8125rem;
+    background: linear-gradient(
+      180deg,
+      #23351d 32.61%,
+      rgba(52, 60, 47, 0) 72.99%
+    );
+  }
+
+  .section-philosophy__overlay-bottom {
+    bottom: 0;
+    height: 13.75rem;
+    background: linear-gradient(0deg, #e8ddd0 10%, rgba(44, 52, 37, 0) 100%);
+  }
+
+  .section-philosophy__bg {
+    display: none;
+  }
+
+  .section-philosophy__bg.mobile {
+    display: block;
+  }
+
+  .section-philosophy__container {
+    padding: 5.31rem 0.81rem 22.69rem;
+  }
+
+  .section-philosophy__content {
+    width: 100%;
+  }
+
+  .section-philosophy__title {
+    font-size: 2rem;
+    line-height: 156.25%;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-philosophy__subtitle {
+    font-size: 2rem;
+    line-height: 130%;
+    letter-spacing: -0.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-philosophy__list {
+    margin-bottom: 2rem;
+  }
+  
+  .section-philosophy__item {
+    align-items: center;
+  }
+
+  .section-philosophy__item:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
+  .section-philosophy__item-icon {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    box-shadow:
+      0 0.453px 1.179px -1.098px rgba(0, 0, 0, 0.1),
+      0 1.723px 4.48px -2.196px rgba(0, 0, 0, 0.09),
+      0 7.529px 19.576px -3.294px rgba(0, 0, 0, 0.05),
+      0 -1.882px 8.47px 0 rgba(255, 255, 255, 0.49) inset,
+      0 0 0 1.882px rgba(249, 162, 47, 0.2);
+  }
+
+  .section-philosophy__item-icon svg {
+    width: 0.5rem;
+    height: 0.4375rem;
+  }
+
+  .section-philosophy__item-text {
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+  }
+
+  .section-philosophy__button {
+    height: 2.625rem;
+    padding: 0 0.25rem 0 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 3.06px 26.928px 0 rgba(232, 203, 130, 0.39);
+  }
+
+  .section-philosophy__button-text {
+    font-size: 0.765rem;
+    letter-spacing: -0.02294rem;
+  }
+
+  .section-philosophy__button-icon {
+    width: 2.00806rem;
+    height: 1.96031rem;
+    box-shadow: 0 3.06px 9.486px rgba(0, 0, 0, 0.25);
+  }
+
+  .section-philosophy__button-icon::before {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .section-philosophy__button-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

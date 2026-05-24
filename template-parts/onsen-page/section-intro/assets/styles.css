@@ -1,0 +1,426 @@
+.onsen-intro {
+  background: white;
+  padding: 2.5rem 0 6.25rem;
+}
+
+.onsen-intro__decor-left {
+  position: absolute;
+  top: -8.75rem;
+  left: 0;
+  width: auto;
+  height: 28.25413rem;
+  z-index: 5;
+}
+
+.onsen-intro__decor-right {
+  position: absolute;
+  top: -11.3rem;
+  right: 0;
+  width: auto;
+  height: 20.5rem;
+  z-index: 7;
+}
+
+.onsen-intro__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.onsen-intro__container {
+  position: relative;
+  max-width: 83.44rem;
+  margin: 0 auto;
+  display: flex;
+  z-index: 5;
+}
+
+.onsen-intro__content {
+  width: 45.4375rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.onsen-intro__subtitle {
+  color: #3a3026;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Pleasent;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 2.5rem;
+}
+
+.onsen-intro__title {
+  color: #2d6635;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.0375rem;
+  margin-bottom: 1.3125rem;
+}
+
+.onsen-intro__description {
+  color: #3a3026;
+  font-family: SVN-Optima;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 3rem;
+}
+
+.onsen-intro__btn {
+  position: relative;
+  width: 100%;
+  height: 13.88656rem;
+}
+
+.onsen-intro__btn.desktop {
+  display: block;
+}
+
+.onsen-intro__btn.mobile {
+  display: none;
+}
+
+.onsen-intro__btn-img {
+  position: absolute;
+  top: 0;
+  left: 25.4375rem;
+  width: auto;
+  height: 107%;
+  object-fit: cover;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.onsen-intro__btn-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 46.5rem;
+  height: 5.5625rem;
+  padding: 0 7.5rem 0 2rem;
+  margin-top: 5.25rem;
+  border-radius: 0.75rem;
+  background: #2d6635;
+  overflow: hidden;
+}
+
+.onsen-intro__btn-link-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.onsen-intro__btn-link-text {
+  color: #fff;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.03rem;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.onsen-intro__btn-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F0FBF2;
+  width: 2.625rem;
+  height: 2.5625rem;
+  flex-shrink: 0;
+  margin-left: 1.25rem;
+  border-radius: 0.75rem;
+  filter: drop-shadow(0 4px 12.4px rgba(0, 0, 0, 0.25));
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.onsen-intro__btn-link-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #7fc828;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+
+/* Hover */
+.onsen-intro__btn-link:hover .onsen-intro__btn-link-icon {
+  background: #e8f9e1;
+}
+
+.onsen-intro__btn-link:hover .onsen-intro__btn-link-icon::before {
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+}
+
+.onsen-intro__btn-link:hover .onsen-intro__btn-link-icon svg {
+  filter: brightness(0) invert(1);
+}
+
+.onsen-intro__btn-link-icon svg {
+  width: 0.625rem;
+  height: 1.0625rem;
+  transition: filter 0.3s ease;
+}
+
+.onsen-intro__benefits {
+  width: 29rem;
+  height: 30.625rem;
+  position: relative;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-left: 7.94rem;
+}
+
+.onsen-intro__brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  background: white;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.onsen-intro__brand-img {
+  height: 1.53713rem;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.onsen-intro__benefit {
+  position: relative;
+  display: flex;
+  width: 13.875rem;
+  height: 14.6875rem;
+  padding: 2rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 3.1875rem;
+  background: radial-gradient(
+    124.38% 124.38% at 91.06% 17.01%,
+    #fffce8 0%,
+    #92bd98 38.83%,
+    #9ab59e 83.14%
+  );
+}
+
+.onsen-intro__benefit-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11.8125rem;
+  height: 11.8125rem;
+  object-fit: cover;
+}
+
+.onsen-intro__benefit-number {
+  color: #fff;
+  font-family: SVN-Optima;
+  font-size: 4.1875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  opacity: 0.8;
+  margin-bottom: 0.625rem;
+}
+
+.onsen-intro__benefit-title {
+  color: #000;
+  font-family: SVN-Optima;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .onsen-intro {
+    padding: 2.5rem 1rem;
+  }
+
+  .onsen-intro__decor-left {
+    display: none;
+  }
+
+  .onsen-intro__decor-right {
+    display: none;
+  }
+
+  .onsen-intro__bg {
+    display: none;
+  }
+
+  .onsen-intro__container {
+    flex-direction: column;
+  }
+
+  .onsen-intro__content {
+    width: 100%;
+  }
+
+  .onsen-intro__subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .onsen-intro__title {
+    font-kerning: none;
+    font-feature-settings: "salt" on;
+    font-family: SVN-Optima;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.0625rem;
+    background: linear-gradient(90deg, #2d6635 62.13%, #a0cc5a 85.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+  }
+
+  .onsen-intro__description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .onsen-intro__btn {
+    height: 6rem;
+  }
+
+  .onsen-intro__btn.desktop {
+    display: none;
+  }
+
+  .onsen-intro__btn.mobile {
+    display: block;
+  }
+
+  .onsen-intro__btn-img {
+    right: -0.2975rem;
+    left: auto;
+    height: 112%;
+  }
+
+  .onsen-intro__btn-link {
+    width: 100%;
+    height: 3rem;
+    padding: 0 3rem 0 0.75rem;
+    margin-top: 2.06rem;
+    border-radius: 0.5rem;
+  }
+
+  .onsen-intro__btn-link-text {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 120%;
+  }
+
+  .onsen-intro__btn-link-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.5rem;
+    border-radius: 0.44rem;
+    filter: drop-shadow(0 2.341px 7.259px rgba(0, 0, 0, 0.25));
+  }
+
+  .onsen-intro__btn-link-icon svg {
+    width: 0.375rem;
+    height: 0.625rem;
+  }
+
+  .onsen-intro__benefits {
+    width: 100%;
+    height: 21.5rem;
+    gap: 0.77088rem;
+    margin-left: 0;
+  }
+
+  .onsen-intro__brand {
+    width: 5.125rem;
+    height: 5.125rem;
+  }
+
+  .onsen-intro__brand-img {
+    height: 1.12538rem;
+  }
+
+  .onsen-intro__benefit {
+    width: 10.36375rem;
+    height: 10.36375rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background: radial-gradient(
+      124.38% 124.38% at 91.06% 17.01%,
+      #fffce8 0%,
+      #92bd98 38.83%,
+      #9ab59e 83.14%
+    );
+  }
+
+  .onsen-intro__benefit-bg {
+    width: 8.82323rem;
+    height: 8.82323rem;
+  }
+
+  .onsen-intro__benefit-number {
+    font-kerning: none;
+    font-feature-settings: "salt" on;
+    font-size: 3rem;
+    line-height: 130%;
+    letter-spacing: -0.15rem;
+    text-transform: uppercase;
+    margin-bottom: 0.9375rem;
+  }
+
+  .onsen-intro__benefit-title {
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.03125rem;
+  }
+}

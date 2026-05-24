@@ -1,0 +1,318 @@
+.section-cta {
+  height: 52.62rem;
+}
+
+.section-cta__roof {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.section-cta__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-cta__container {
+  position: relative;
+  max-width: 100rem;
+  margin: 0 auto;
+  z-index: 5;
+}
+
+.section-cta__content {
+  position: absolute;
+  top: 14.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 54.875rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-cta__title {
+  color: #fff;
+  text-align: center;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.125rem;
+  margin-bottom: 3.1875rem;
+}
+
+.section-cta__actions {
+  display: flex;
+  align-items: center;
+}
+
+.section-cta__booking {
+  display: flex;
+  height: 3.75rem;
+  padding: 0 0.5rem 0 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  background: #2d6635;
+  margin-right: 0.75rem;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-cta__booking:hover {
+  box-shadow: 0 4px 35.2px 0 rgba(232, 203, 130, 0.39);
+}
+
+.section-cta__booking:active {
+  transform: translateY(0) scale(0.98);
+  transition-duration: 0.1s;
+}
+
+.section-cta__booking-text {
+  color: #fff;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.03rem;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+.section-cta__booking-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: #f0fdf4;
+  box-shadow: 0 4.19px 12.99px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  overflow: hidden;
+  will-change: transform, background;
+}
+
+/* Circle expansion effect */
+.section-cta__booking-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #7fc828;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+
+.section-cta__booking:hover .section-cta__booking-icon {
+  background: #e8f9e1;
+}
+
+.section-cta__booking:hover .section-cta__booking-icon::before {
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+}
+
+.section-cta__booking:active .section-cta__booking-icon {
+  transform: scale(0.95);
+  transition-duration: 0.1s;
+}
+
+.section-cta__booking-icon img {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.section-cta__booking:hover .section-cta__booking-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.section-cta__donate {
+  display: flex;
+  min-height: 4.5625rem;
+  padding: 0 0.5rem 0 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  background: #b98951;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-cta__donate:active {
+  transform: translateY(0) scale(0.98);
+  transition-duration: 0.1s;
+}
+
+.section-cta__donate-text {
+  width: 7.25rem;
+  color: #fff;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.03rem;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+.section-cta__donate-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: #f0fdf4;
+  box-shadow: 0 4.19px 12.99px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  overflow: hidden;
+  will-change: transform, background;
+}
+
+/* Circle expansion effect */
+.section-cta__donate-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #d4a574;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+
+.section-cta__donate:hover .section-cta__donate-icon {
+  background: #f5e6d8;
+}
+
+.section-cta__donate:hover .section-cta__donate-icon::before {
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+}
+
+.section-cta__donate:active .section-cta__donate-icon {
+  transform: scale(0.95);
+  transition-duration: 0.1s;
+}
+
+.section-cta__donate-icon img {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.section-cta__donate:hover .section-cta__donate-icon img {
+  filter: brightness(0) invert(1);
+}
+
+/* footer */
+.footer {
+  overflow: visible;
+}
+
+.footer-top {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    overflow: hidden;
+  }
+
+  .footer-top {
+    display: block;
+  }
+
+  .section-cta {
+    height: 21.62rem;
+    display: none;
+  }
+
+  .section-cta__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .section-cta__content {
+    position: absolute;
+    top: 14.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 54.875rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-cta__title {
+    color: #fff;
+    text-align: center;
+    font-kerning: none;
+    font-feature-settings: "salt" on;
+    font-family: SVN-Optima;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.125rem;
+    margin-bottom: 3.1875rem;
+  }
+
+  .section-cta__actions {
+    display: none;
+  }
+}

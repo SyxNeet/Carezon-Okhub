@@ -1,0 +1,516 @@
+.onsen-process {
+  background: white;
+  height: 62rem;
+  overflow: hidden;
+}
+
+.onsen-process__scenery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.onsen-process__scenery--mobile {
+  display: none;
+}
+
+.onsen-process__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.onsen-process__bg--mobile {
+  display: none;
+}
+
+.onsen-process__tower {
+  position: absolute;
+  top: 3.4375rem;
+  left: 0;
+  width: auto;
+  height: 25.625rem;
+}
+
+.onsen-process__cherry-blossom--left {
+  position: absolute;
+  left: 0;
+  bottom: 3.1rem;
+  width: auto;
+  height: 15rem;
+}
+
+.onsen-process__cherry-blossom--right {
+  position: absolute;
+  right: 0;
+  top: 5.79rem;
+  height: 17.82481rem;
+  width: auto;
+}
+
+.onsen-process__water-basin {
+  position: absolute;
+  left: 5.19rem;
+  bottom: 1.98rem;
+  width: 16.91669rem;
+  height: auto;
+  z-index: 1;
+}
+
+.onsen-process__store {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: 15.55119rem;
+  z-index: 1;
+}
+
+.onsen-process__flower {
+  position: absolute;
+  bottom: 1.69rem;
+  left: 1.12rem;
+  width: 5.9375rem;
+  height: auto;
+  z-index: 1;
+}
+
+.onsen-process__fern {
+  position: absolute;
+  bottom: 1.82rem;
+  right: 0;
+  width: auto;
+  height: 16.5rem;
+  z-index: 1;
+}
+
+.onsen-process__overlay {
+  position: absolute;
+  top: calc(100% - 5.69rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 158.875rem;
+  height: 21rem;
+  /* border-radius: 158.875rem; */
+  border-radius: 50%;
+  background: #fff;
+}
+
+.onsen-process__container {
+  max-width: 84.4rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.onsen-process__head {
+  position: relative;
+  display: flex;
+  width: 46.625rem;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.3rem;
+  margin-bottom: 3.625rem;
+}
+
+.onsen-process__title {
+  text-align: center;
+  font-family: SVN-Optima;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.0625rem;
+  background: linear-gradient(90deg, #2d6635 70.15%, #a0cc5a 96.86%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.onsen-process__description {
+  color: #3a3026;
+  text-align: center;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Pleasent;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5.04438rem;
+}
+
+.onsen-process__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1.25rem;
+}
+
+.onsen-process__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 31.4375rem;
+  border-radius: 0.75rem;
+  background: #fffcf8;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  z-index: 10;
+}
+
+.onsen-process__item__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 0.75rem;
+}
+
+.onsen-process__item__number {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: #ecae8d;
+  color: #3a3026;
+  text-align: center;
+  font-family: SVN-Optima;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.03rem;
+}
+
+.onsen-process__item:nth-child(2) .onsen-process__item__number {
+  background: #9ebcea;
+}
+.onsen-process__item:nth-child(3) .onsen-process__item__number {
+  background: #eac198;
+}
+.onsen-process__item:nth-child(4) .onsen-process__item__number {
+  background: #a9d5ae;
+}
+.onsen-process__item:nth-child(5) .onsen-process__item__number {
+  background: #92b6f0;
+}
+.onsen-process__item:nth-child(6) .onsen-process__item__number {
+  background: #eec3f6;
+}
+.onsen-process__item:nth-child(7) .onsen-process__item__number {
+  background: #f6d4b2;
+}
+
+.onsen-process__item__content {
+  display: flex;
+  padding: 0 1rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.56rem;
+}
+
+.onsen-process__item__content__step {
+  color: #3a3026;
+  text-align: center;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.02rem;
+}
+
+.onsen-process__item__content__title {
+  color: #3a3026;
+  text-align: center;
+  font-family: SVN-Optima;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.025rem;
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.onsen-process__item__content__title em{
+    font-size: var(--font-size-sm, 0.875rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.onsen-process__item__content__description {
+  color: #000;
+  text-align: center;
+  font-family: SVN-Optima;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 1.31rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.onsen-process__item__bottom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.onsen-process__item__bottom__image {
+  width: 100%;
+  height: 12.4375rem;
+  object-fit: cover;
+}
+
+.onsen-process__item__bottom__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.9375rem;
+  padding: 0 0.8125rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+  background: #8f4f56;
+
+  color: #fff;
+  text-align: center;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.onsen-process__item:nth-child(2) .onsen-process__item__bottom__content {
+  background: #7d74bf;
+}
+.onsen-process__item:nth-child(3) .onsen-process__item__bottom__content {
+  background: #8f644f;
+}
+.onsen-process__item:nth-child(4) .onsen-process__item__bottom__content {
+  background: #2e7852;
+}
+.onsen-process__item:nth-child(5) .onsen-process__item__bottom__content {
+  background: #4f7d8f;
+}
+.onsen-process__item:nth-child(6) .onsen-process__item__bottom__content {
+  background: #4f5f8f;
+}
+.onsen-process__item:nth-child(7) .onsen-process__item__bottom__content {
+  background: #8f4f56;
+}
+
+@media (max-width: 640px) {
+  .onsen-process {
+    height: 52.4425rem;
+  }
+
+  .onsen-process__scenery {
+    display: none;
+  }
+
+  .onsen-process__scenery--mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 2.31rem);
+    object-fit: cover;
+  }
+
+  .onsen-process__bg {
+    display: none;
+  }
+
+  .onsen-process__bg--mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 2.31rem);
+    object-fit: cover;
+  }
+
+  .onsen-process__tower {
+    position: absolute;
+    top: 8.87rem;
+    left: -0.625rem;
+    width: auto;
+    height: 9rem;
+  }
+
+  .onsen-process__cherry-blossom--left {
+    position: absolute;
+    left: -2.5rem;
+    bottom: 2.32rem;
+    width: auto;
+    height: 9.17075rem;
+    z-index: 2;
+  }
+
+  .onsen-process__cherry-blossom--right {
+    position: absolute;
+    right: -2rem;
+    top: 10.74rem;
+    height: 8.93844rem;
+    width: auto;
+    z-index: 2;
+  }
+
+  .onsen-process__water-basin {
+    position: absolute;
+    left: 0.72rem;
+    bottom: 2.66rem;
+    width: 9.85744rem;
+    z-index: 3;
+  }
+
+  .onsen-process__store {
+    bottom: 2.34rem;
+    height: 5.35638rem;
+    z-index: 2;
+  }
+
+  .onsen-process__flower {
+    bottom: 2rem;
+    left: -1.65rem;
+    width: 3.45981rem;
+    z-index: 4;
+  }
+
+  .onsen-process__fern {
+    bottom: 2.96rem;
+    right: 0;
+    height: 4.85875rem;
+    z-index: 3;
+  }
+
+  .onsen-process__overlay {
+    top: auto;
+    bottom: 2.31rem;
+    width: 32.625rem;
+    height: 2.5625rem;
+    /* border-radius: 158.875rem; */
+    border-radius: 50% 50% 0 0;
+  }
+
+  .onsen-process__head {
+    width: 100%;
+    padding: 2.5rem;
+    margin-bottom: 1.19rem;
+  }
+
+  .onsen-process__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    background: linear-gradient(90deg, #2d6635 62.13%, #a0cc5a 85.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.25rem;
+  }
+
+  .onsen-process__description {
+    font-size: 1.75rem;
+    line-height: normal;
+  }
+
+  .onsen-process__list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 1rem;
+    gap: 0;
+    padding: 2rem 1rem;
+    margin: -2rem 0;
+
+    /* hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE & Edge */
+  }
+
+  .onsen-process__list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .onsen-process__item {
+    height: 29rem;
+    width: 15.625rem;
+    z-index: 1;
+    flex-shrink: 0;
+  }
+
+  .onsen-process__item:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+
+  .onsen-process__item__number {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: -0.02rem;
+  }
+
+  .onsen-process__item__content {
+    margin-top: 2.44rem;
+  }
+
+  .onsen-process__item__content__step {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: normal;
+    margin-bottom: 0.125rem;
+  }
+
+  .onsen-process__item__content__title {
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: -0.02rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .onsen-process__item__content__description {
+    color: #3a3026;
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .onsen-process__item__bottom__content {
+    font-size: 0.875rem;
+    line-height: 120%;
+  }
+}

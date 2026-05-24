@@ -1,0 +1,21 @@
+@import url("../section-banner/assets/styles.css"); 
+@import url("../section-about-us/assets/styles.css"); 
+@import url("../section-story/assets/styles.css");
+@import url("../section-aspiration/assets/styles.css");
+@import url("../section-carezone/assets/styles.css");
+@import url("../seciton-vision/assets/styles.css");
+@import url("../section-why-choose/assets/styles.css");
+.is_mb {
+  display: none;
+}
+@media (max-width: 639.98px) {
+  .is_pc {
+    display: none;
+  }
+  .is_mb {
+    display: block;
+  }
+  .footer.not-front .footer-top {
+    display: block !important;
+  }
+}

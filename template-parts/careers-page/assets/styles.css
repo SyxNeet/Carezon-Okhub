@@ -1,0 +1,8 @@
+@import url("../section-banner/assets/styles.css");
+@import url("../section-list/assets/styles.css");
+@import url("../../components/career-item/assets/styles.css");
+@import url("../section-gallery/assets/styles.css");
+
+main {
+    background: #FDF7F1;
+}

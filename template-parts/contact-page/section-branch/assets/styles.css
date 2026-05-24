@@ -1,0 +1,156 @@
+.branch {
+  padding-top: 5rem;
+  background: #fff7f0;
+}
+
+.branch__container {
+  max-width: 82.5rem;
+  margin: 0 auto;
+}
+
+.branch__title {
+  display: inline-block;
+  font-kerning: none;
+  font-feature-settings: 'salt' on;
+  font-family: SVN-Optima;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.14rem;
+  background: linear-gradient(90deg, #2D6635 81.41%, #CFF396 105.22%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2.5rem;
+}
+
+.branch__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+  row-gap: 2.5rem;
+}
+
+.branch-card {
+  display: flex;
+  padding: 1.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.875rem;
+  flex: 1 0 0;
+  border-radius: 0.5rem;
+  background: rgba(204, 185, 149, 0.16);
+}
+
+.branch-card__title {
+  color: #3A3026;
+  font-family: SVN-Optima;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.025rem;
+}
+
+.branch-card__phone {
+  display: flex;
+  align-items: center;
+}
+
+.branch-card__icon {
+  width: 1.596rem;
+  height: 1.596rem;
+  margin-right: 0.625rem;
+}
+
+.branch-card__text {
+  color: #3A3026;
+  text-align: left;
+  font-kerning: none;
+  font-feature-settings: 'salt' on;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.02rem;
+}
+
+.branch-card__location {
+  display: flex;
+  align-items: flex-start;
+}
+
+.branch-card__address {
+  display: flex;
+  flex-direction: column;
+}
+
+.branch-card__text {
+  color: #3A3026;
+  font-kerning: none;
+  font-feature-settings: 'salt' on;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.02rem;
+  margin-bottom: 0.25rem;
+}
+
+.branch-card__link {
+  color: #2D6635;
+  font-family: SVN-Optima;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+@media (max-width: 638.98px) {
+  .branch {
+    padding: 1.8125rem 1rem 0;
+  }
+
+  .branch__title {
+    font-size: 2rem;
+    letter-spacing: -0.04rem;
+    margin-bottom: 1.25rem;
+    display: block;
+  }
+
+  .branch__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .branch-card {
+    padding: 1rem;
+  }
+
+  .branch-card__text {
+    color: #3A3026;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: -0.03125rem;
+  }
+
+  .branch-card__link {
+    color: #2D6635;
+    font-feature-settings: 'salt' on;
+    line-height: 120%;
+    letter-spacing: -0.015rem;
+    text-decoration: none;
+  }
+}

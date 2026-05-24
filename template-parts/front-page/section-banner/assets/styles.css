@@ -1,0 +1,127 @@
+.section-banner {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.section-banner .swiper {
+  height: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-youtube-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-youtube {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.banner-youtube-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.banner-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.custom-pagination {
+  position: absolute;
+  display: inline-flex;
+  padding: 0 1.25rem;
+  height: 1.875rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  border: 0.7px solid rgba(5, 10, 5, 0.10);
+  background: #FFF;
+  width: fit-content;
+  left: 50%;
+  bottom: 1.75rem;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.section-banner .custom-pagination.hidden {
+    display: none;
+}
+
+.custom-pagination .nav {
+    flex-shrink: 0;
+}
+
+.custom-pagination .nav img {
+    width: 0.625rem;
+    height: 0.625rem;
+    object-fit: cover;
+}
+
+.custom-pagination .nav.prev {
+    margin-right: 0.625rem;
+}
+
+.custom-pagination .nav.next {
+    margin-left: 0.625rem;
+}
+
+.custom-pagination .nav.next img {
+    transform: rotate(-180deg);
+}
+
+.custom-pagination .dots {
+    display: flex;
+    align-items: center;
+}
+
+.custom-pagination .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #B4ACA3;
+    transition: all 0.3s ease-out;
+    border-radius: 2rem;
+    border: 0.7px solid rgba(5, 10, 5, 0.10);
+    margin-right: 0.625rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.custom-pagination .dot.active {
+    background: #2D6635;
+    opacity: 0.8;
+}
+
+.custom-pagination .toggle .icon-play, .custom-pagination .toggle .icon-pause {
+    width: 0.5rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.custom-pagination .toggle .icon-play {
+    display: none;
+}
+
+@media (max-width: 639.98px) {
+  .section-banner {
+    height: 100dvh;
+  }
+}

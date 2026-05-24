@@ -1,0 +1,887 @@
+/* Booking form (booking-container) — tái dùng style từ pricing-page/section-booking.
+   @import phải đứng trước mọi rule khác. */
+@import url("../../../pricing-page/section-booking/assets/styles.css");
+
+/* =============================================================================
+   Section Offers — Restaurant Page
+   Parts: 1) Social CTA  2) Offer Cards  3) Booking Form
+   ============================================================================= */
+
+/* ----------------------------------------------------------------------------
+   Wrapper
+   ---------------------------------------------------------------------------- */
+.section-offers {
+  background-color: #f0ece6;
+  width: 100%;
+  position: relative;
+  /* overflow: hidden; */
+  padding-bottom: 10rem;
+}
+
+.section-offers::before {
+  content: "";
+  border-radius: 150%;
+  z-index: 5;
+  background: #efebe5;
+  width: 158.875rem;
+  height: 11.875rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2rem;
+}
+
+.section-offers__bg-overlay {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 170.625rem;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 2.36%,
+    rgba(178, 112, 55, 0.21) 34.8%,
+    #b85b400d 82.05%
+  );
+}
+
+.section-offers__inner {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6.25rem; /* 100px */
+}
+
+/* ----------------------------------------------------------------------------
+   Part 1 — Social CTA
+   ---------------------------------------------------------------------------- */
+.section-offers__social-cta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem; /* 80px */
+  padding-bottom: 0;
+}
+
+.section-offers__social-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 46.625rem; /* 746px */
+}
+
+.section-offers__subtitle {
+  font-family: "SVN-Pleasent", cursive;
+  font-size: 3rem; /* 48px */
+  font-weight: 400;
+  line-height: 1.681; /* ~80.71px */
+  color: #3a3026;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 1rem; /* 16px — Figma: gap-[16px] between subtitle and title */
+}
+
+.section-offers__title {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 3.125rem; /* 50px */
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.0625rem; /* -1px */
+  text-align: center;
+  background: linear-gradient(to right, #2d6635, #b7d10f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 100%;
+}
+
+.section-offers__social-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 1.88rem; /* 16px */
+}
+
+/* Social button items */
+.section-offers__social-btn {
+  display: flex;
+  align-items: center;
+  height: 3.75rem; /* 60px */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem; /* 24px */
+  padding-right: 0.5rem; /* 8px */
+  border-radius: 0.75rem; /* 12px */
+  background: linear-gradient(to bottom, #8f5309, #ca812c);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 400ms cubic-bezier(0.47, 0, 0.01, 1.01);
+}
+
+.section-offers__social-btn + .section-offers__social-btn {
+  margin-left: 1.125rem; /* 18px */
+}
+
+.section-offers__social-btn-icon {
+  width: 1.375rem; /* 22px */
+  height: 1.375rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.section-offers__social-btn:first-child .section-offers__social-btn-icon {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}
+
+.section-offers__social-btn-label {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.03rem; /* -0.48px */
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: 1rem; /* 16px */
+  white-space: nowrap;
+  width: 5.125rem; /* 82px */
+}
+
+.section-offers__social-btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem; /* 16px */
+}
+
+.section-offers__social-btn-arrow-inner {
+  background-color: #fafafa;
+  width: 2.5rem; /* 40px */
+  height: 2.5rem;
+  border-radius: 0.5rem; /* 8px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4.19px 12.99px 0 rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+}
+
+.section-offers__social-btn-arrow-inner svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ----------------------------------------------------------------------------
+   Part 2 — Offer Cards Row
+   ---------------------------------------------------------------------------- */
+.section-offers__cards-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 3.94rem; /* ~23px gap between text and cards */
+  height: 32.8125rem; /* 525px */
+}
+
+/* Swiper wrapper (needed for mobile, harmless on desktop) */
+.section-offers__swiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section-offers__swiper-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Card */
+.section-offers__card {
+  flex-shrink: 0;
+  width: 24.4375rem; /* 391px */
+  height: 32.8125rem; /* 525px */
+  position: relative;
+  overflow: hidden;
+}
+
+.section-offers__card + .section-offers__card {
+  /* Spacing do Swiper quản lý qua spaceBetween (desktop 16 / mobile 10). */
+  margin-left: 0;
+}
+
+/* Odd cards are shorter (405px inner) */
+.section-offers__card--short {
+  display: flex;
+  align-items: center;
+}
+
+.section-offers__card--short .section-offers__card-inner {
+  height: 25.3125rem; /* 405px */
+  width: 100%;
+  border-radius: 0.75rem; /* 12px */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Full-height cards */
+.section-offers__card--full {
+  border-radius: 1rem; /* 16px */
+}
+
+.section-offers__card--full .section-offers__card-inner {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem; /* 16px */
+  overflow: hidden;
+  position: relative;
+}
+
+.section-offers__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.section-offers__card-badge {
+  position: absolute;
+  top: 0.5rem; /* 8px */
+  left: 0.5rem;
+  display: flex;
+  align-items: center;
+  background-color: #122915;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1.5625rem; /* 25px */
+  border-radius: 0.75rem; /* 12px */
+  box-shadow: 0 4px 17.6px 0 rgba(178, 249, 215, 0.39);
+  z-index: 2;
+}
+
+.section-offers__card-badge-icon {
+  width: 1.75rem; /* 28px */
+  height: 1.75rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 0.16406rem;
+  background: #f0fbf2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-offers__card-badge-icon img {
+  width: 0.98438rem;
+  height: 0.98438rem;
+  object-fit: cover;
+}
+
+.section-offers__card-badge-label {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 0.875rem; /* 14px */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+}
+
+/* Swiper pagination (mobile only) */
+.section-offers__swiper-pagination {
+  display: none;
+}
+
+/* ----------------------------------------------------------------------------
+   Part 3 — Booking Form
+   ---------------------------------------------------------------------------- */
+.section-offers__form-section {
+  width: 100%;
+  padding-left: 7.8125rem; /* 125px */
+  padding-right: 7.8125rem;
+  margin-top: 6.25rem; /* 100px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Booking-container (copy từ trang chủ) — bỏ padding standalone của pricing,
+   để form-section lo layout. Giữ override -fb của trang chủ. */
+.section-offers__form-section .booking-container {
+  padding: 0;
+}
+
+.booking-container-fb .booking__form {
+  right: 2rem;
+}
+
+.section-offers__form-wrap {
+  width: 100%;
+  height: 32rem; /* 512px */
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem; /* 32px */
+}
+
+/* Green panel background */
+.section-offers__form-bg {
+  position: absolute;
+  left: 0;
+  top: 2.8125rem; /* 45px */
+  right: 0;
+  height: 29.1875rem; /* 467px */
+  background-color: #275d36;
+  border-radius: 2rem; /* 32px */
+  box-shadow: 9px 15px 72.1px 0 rgba(10, 55, 7, 0.09);
+  overflow: hidden;
+}
+
+/* Family image */
+.section-offers__form-image-wrap {
+  position: absolute;
+  left: -0.375rem; /* -6px */
+  top: -0.625rem; /* -10px */
+  width: 37.3125rem; /* 597px */
+  height: 33rem; /* 528px */
+  z-index: 2;
+  pointer-events: none;
+}
+
+.section-offers__form-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Inner container — desktop: fills wrap, mobile: flex column */
+.section-offers__form-inner {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+/* Form fields panel (right side) */
+.section-offers__form-fields {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 36.4375rem; /* 583px */
+  background-color: #2d6635;
+  box-shadow: 0 -8px 12px 0 rgba(0, 0, 0, 0.09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem; /* 40px — Figma: p-[40px] */
+  z-index: 3;
+}
+
+.section-offers__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Input groups */
+.section-offers__field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section-offers__field + .section-offers__field {
+  margin-top: 0.5rem; /* 8px */
+}
+
+.section-offers__input {
+  width: 100%;
+  height: 3.5rem; /* 56px */
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem; /* 12px */
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem;
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 0.875rem; /* 14px */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3a3026;
+  outline: none;
+  transition: border-color 400ms cubic-bezier(0.47, 0, 0.01, 1.01);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.section-offers__input::placeholder {
+  color: rgba(58, 48, 38, 0.6);
+}
+
+.section-offers__input:focus-visible {
+  border-color: #2d6635;
+  outline: 2px solid rgba(45, 102, 53, 0.3);
+  outline-offset: 2px;
+}
+
+/* Select */
+.section-offers__select-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.section-offers__select {
+  width: 100%;
+  height: 3.5rem; /* 56px */
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem; /* 12px */
+  padding-left: 0.75rem;
+  padding-right: 2.5rem;
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(58, 48, 38, 0.6);
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  transition: border-color 400ms cubic-bezier(0.47, 0, 0.01, 1.01);
+}
+
+.section-offers__select:focus-visible {
+  border-color: #2d6635;
+}
+
+.section-offers__select-arrow {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Counter group */
+.section-offers__counter-group {
+  width: 100%;
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem; /* 12px */
+  padding: 0.75rem; /* 12px */
+  display: flex;
+  flex-direction: column;
+}
+
+.section-offers__counter-label {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3a3026;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.section-offers__counter-label-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.section-offers__counter-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-offers__counter-row + .section-offers__counter-row {
+  margin-top: 0.8125rem; /* 13px */
+}
+
+.section-offers__counter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section-offers__counter-row-label {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3a3026;
+  white-space: nowrap;
+}
+
+.section-offers__counter-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.75rem; /* 44px */
+  width: 8.3125rem; /* 133px */
+  background-color: rgba(117, 114, 88, 0.07);
+  border-radius: 0.5rem;
+  padding: 0.25rem; /* 4px */
+}
+
+.section-offers__counter-btn {
+  width: 1.6756rem; /* ~26.8px — matches Figma aspect-ratio 26.81/26.81 in 44px container */
+  height: 1.6756rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 400ms cubic-bezier(0.47, 0, 0.01, 1.01);
+}
+
+.section-offers__counter-btn:focus-visible {
+  outline: 2px solid #2d6635;
+  outline-offset: 2px;
+}
+
+.section-offers__counter-btn svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.section-offers__counter-value {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #824508;
+  text-align: center;
+  min-width: 1.5rem;
+}
+
+/* Submit button */
+.section-offers__submit {
+  width: 100%;
+  height: 3.75rem; /* 60px */
+  background-color: #2d6635;
+  border: none;
+  border-radius: 0.75rem; /* 12px */
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem; /* 24px */
+  padding-right: 0.5rem; /* 8px */
+  padding-top: 0.5rem; /* 8px — Figma: py-[8px] */
+  padding-bottom: 0.5rem; /* 8px */
+  cursor: pointer;
+  margin-top: 0.5rem; /* 8px */
+  transition: opacity 400ms cubic-bezier(0.47, 0, 0.01, 1.01);
+}
+
+.section-offers__submit:focus-visible {
+  outline: 2px solid #b7d10f;
+  outline-offset: 2px;
+}
+
+.section-offers__submit-label {
+  flex: 1;
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+  line-height: 1.2; /* Figma: leading-[1.2] */
+  letter-spacing: -0.03rem; /* -0.48px — Figma: tracking-[-0.48px] */
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.section-offers__submit-icon {
+  width: 2.5rem; /* 40px */
+  height: 2.5rem;
+  background-color: #f0fdf4;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4.19px 12.99px 0 rgba(0, 0, 0, 0.25);
+}
+
+.section-offers__submit-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #b98951;
+}
+
+/* Hover states — desktop only */
+@media (min-width: 1024px) {
+  .section-offers__social-btn:hover {
+    opacity: 0.9;
+  }
+
+  .section-offers__submit:hover {
+    opacity: 0.85;
+  }
+
+  .section-offers__counter-btn:hover {
+    background-color: #f0fdf4;
+  }
+}
+
+/* ==============================================================================
+   Mobile overrides — only properties that differ from desktop
+   ============================================================================== */
+@media screen and (max-width: 639.98px) {
+  .section-offers__inner {
+    padding-bottom: 2.5rem; /* 40px */
+  }
+
+  /* Part 1 — Social CTA */
+  .section-offers__social-cta {
+    padding-top: 2.5rem; /* 40px */
+    padding-left: 0.96875rem; /* 15.5px */
+    padding-right: 0.96875rem;
+  }
+
+  .section-offers__social-text {
+    width: 21.5rem; /* 344px */
+  }
+
+  .section-offers__subtitle {
+    font-size: 2rem; /* 32px */
+    line-height: 3.125rem; /* 50px */
+    margin-bottom: 0.125rem; /* 2px — Figma MB: gap-[2px] between subtitle and title */
+  }
+
+  .section-offers__title {
+    font-size: 1.625rem; /* 26px */
+    font-weight: 500; /* Figma MB: SVN-Optima:Medium vs desktop DemiBold=600 */
+    letter-spacing: -0.0325rem; /* -0.52px */
+    background: linear-gradient(91.0643deg, #2d6635 62.128%, #a0cc5a 85.778%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-offers__social-buttons {
+    width: 100%; /* 344px */
+    margin-top: 1.5rem;
+  }
+
+  .section-offers__social-btn {
+    height: 2.625rem; /* 42px */
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem; /* 12px */
+    padding-right: 0.75rem;
+    border-radius: 0.5rem; /* 8px */
+    flex: 1;
+  }
+
+  .section-offers__social-btn + .section-offers__social-btn {
+    margin-left: 0.5rem; /* 8px */
+  }
+
+  .section-offers__social-btn-label {
+    font-size: 0.75rem; /* 12px */
+    margin-left: 0.75rem; /* 12px */
+    width: auto; /* 64px */
+  }
+
+  .section-offers__social-btn-arrow {
+    display: none;
+  }
+
+  .section-offers__social-btn-icon {
+    width: 1.375rem;
+    height: 1.375rem;
+  }
+
+  /* Part 2 — Offer Cards (Swiper carousel) */
+  .section-offers__cards-row {
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem;
+    margin-top: 2.25rem; /* 36px */
+    height: 20.5078125rem; /* 328.125px */
+  }
+
+  /* Mobile: BỎ Swiper → scroll ngang native (override global .swiper{overflow:hidden}) */
+  .section-offers__swiper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; /* momentum scroll iOS */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .section-offers__swiper::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .section-offers__swiper-wrapper {
+    display: flex;
+    width: -moz-max-content;
+    width: max-content; /* nở theo số card để scroll */
+    transform: none !important; /* phòng khi Swiper để sót transform */
+  }
+
+  .section-offers__card {
+    width: 15.2734375rem; /* 244.375px */
+    height: 20.5078125rem; /* 328.125px */
+  }
+
+  /* Khoảng cách giữa card (thay cho spaceBetween của Swiper) */
+  .section-offers__card + .section-offers__card {
+    margin-left: 0.625rem; /* 10px */
+  }
+
+  .section-offers__card--short .section-offers__card-inner {
+    height: 15.8203125rem; /* 253.125px */
+    border-radius: 0.46875rem; /* 7.5px */
+  }
+
+  .section-offers__card--full {
+    border-radius: 0.625rem; /* 10px */
+  }
+
+  .section-offers__card--full .section-offers__card-inner {
+    border-radius: 0.625rem;
+  }
+
+  .section-offers__card-badge {
+    padding-left: 0.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 0.5rem; /* 8px */
+  }
+
+  .section-offers__card-badge-icon {
+    width: 1.25rem; /* 20px */
+    height: 1.25rem;
+    border-radius: 0.25rem;
+  }
+
+  .section-offers__card-badge-label {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  .section-offers__swiper-pagination {
+    display: none; /* không còn pagination (mobile dùng scroll native) */
+  }
+
+  /* Part 3 — Booking Form (stacked) */
+  .section-offers__form-section {
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem;
+    margin-top: 3.0519rem; /* 48.83px */
+  }
+
+  .section-offers__form-wrap {
+    height: auto;
+    border-radius: 0.75rem; /* 12px */
+    overflow: hidden;
+  }
+
+  .section-offers__form-bg {
+    display: none;
+  }
+
+  .section-offers__form-inner {
+    position: relative;
+    inset: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #275d36;
+    border-radius: 0.75rem;
+  }
+
+  .section-offers__form-image-wrap {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 16.25rem; /* 260px */
+    order: 2;
+  }
+
+  .section-offers__form-image {
+    border-radius: 0 0 0.75rem 0.75rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-offers__form-fields {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    padding: 0.75rem; /* 12px */
+    order: 1;
+    box-shadow: none;
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
+
+  .section-offers__input {
+    height: 2.875rem; /* 46px */
+    border-radius: 0.5rem; /* 8px */
+  }
+
+  .section-offers__select {
+    height: 2.875rem; /* 46px */
+    border-radius: 0.5rem;
+  }
+
+  .section-offers__counter-group {
+    border-radius: 0.5rem;
+  }
+
+  /* Counter control — mobile uses smaller Default variant (34px × 105px) */
+  .section-offers__counter-control {
+    height: 2.125rem; /* 34px — Figma MB: h-[34px] */
+    width: 6.5625rem; /* 105px — Figma MB: w-[105px] */
+  }
+
+  .section-offers__counter-btn {
+    width: 1.625rem; /* 26px — Figma MB: size-[26px] */
+    height: 1.625rem;
+  }
+
+  /* Submit button — mobile: h-42px, rounded-8px, text-12px, letter-spacing 0 */
+  .section-offers__submit {
+    height: 2.625rem; /* 42px — Figma MB: h-[42px] */
+    border-radius: 0.5rem; /* 8px */
+    padding-left: 0.75rem; /* 12px */
+    padding-right: 0.25rem; /* 4px */
+    padding-top: 0.25rem; /* 4px */
+    padding-bottom: 0.25rem; /* 4px */
+    margin-top: 0.5rem;
+  }
+
+  .section-offers__submit-label {
+    font-size: 0.75rem; /* 12px — Figma MB: text-[12px] */
+    letter-spacing: 0; /* Figma MB: no tracking */
+    line-height: 1.5; /* Figma MB: leading-[1.5] */
+  }
+
+  .section-offers__submit-icon {
+    width: 2.125rem; /* 34px — Figma MB: size-[34px] */
+    height: 2.125rem;
+  }
+
+  .section-offers::before {
+    width: 31rem;
+    height: 4.5rem;
+  }
+}

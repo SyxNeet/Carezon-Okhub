@@ -1,0 +1,264 @@
+.mindful-living {
+  position: relative;
+  height: 69.5vw;
+  width: 100%;
+  overflow: hidden;
+  background: #fff7f0;
+}
+
+.mindful-living__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mindful-living__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  mask-image: var(--mask-image);
+  mask-size: cover;
+  mask-type: alpha;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  z-index: 1;
+}
+
+.mindful-living__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mindful-living__border {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.mindful-living__leaf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.mindful-living__link {
+  position: absolute;
+  top: 11.81vw;
+  left: 30.28vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.mindful-living__link--btn {
+  position: relative;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 5.5rem;
+  background: var(
+    --Button-special,
+    radial-gradient(
+      120.17% 120.17% at 15.93% -15.88%,
+      #dbf8c6 0%,
+      #3d542c 62.97%
+    )
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 -1px 52.5px 0 transparent;
+  transition: 0.3s ease-in-out;
+  will-change: box-shadow;
+}
+
+.mindful-living__link--btn p {
+  position: relative;
+  width: 7.19381rem;
+  color: #f7f7f7;
+  text-align: center;
+  font-family: SVN-Optima;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.125rem;
+}
+
+.mindful-living__link--btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4.625rem;
+  opacity: 0.2;
+  width: 9.25rem;
+  height: 9.25rem;
+}
+
+.mindful-living__link--btn p::after {
+  content: "";
+  position: absolute;
+  bottom: -0.31rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7.1875rem;
+  height: 0.0625rem;
+  background: #f4f1e6;
+}
+
+.mindful-living__link--btn:hover {
+  box-shadow: 0 -1px 52.5px 0 rgba(243, 221, 113, 0.77);
+}
+
+.mindful-living__content {
+  max-width: 96.9rem;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 4.3125rem;
+  z-index: 2;
+}
+
+.mindful-living__title {
+  text-align: center;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: "SVN-Optima";
+  font-size: 5.3125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.26563rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #2d6635 62.13%, #a0cc5a 85.78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.6rem;
+}
+
+.mindful-living__subtitle {
+  text-align: end;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: "SVN-Optima";
+  font-size: 3.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.16875rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #2d6635 0%, #b7d10f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  margin-right: 9.44rem;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 639.98px) {
+  .mindful-living {
+    height: 26.375rem;
+  }
+
+  .mindful-living__image-wrapper {
+    height: 13.06644rem;
+    top: 9.52rem;
+  }
+
+  .mindful-living__image {
+    display: none;
+  }
+
+  .mindful-living__image-mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mindful-living__leaf {
+    display: none;
+  }
+
+  .mindful-living__leaf-mobile {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 100%;
+    height: 26.375rem;
+    object-fit: cover;
+  }
+
+  .mindful-living__border {
+    height: calc(13.06644rem + 0.4rem);
+    top: 9.52rem;
+  }
+
+  .mindful-living__content {
+    padding-top: 2rem;
+  }
+
+  .mindful-living__title {
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.09375rem;
+    text-transform: uppercase;
+  }
+
+  .mindful-living__subtitle {
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.07188rem;
+    text-transform: uppercase;
+    margin-right: 1rem;
+  }
+
+  .mindful-living__link {
+    top: 9.57rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mindful-living__link--btn {
+    width: 8.5905rem;
+    height: 8.5905rem;
+  }
+
+  .mindful-living__link--btn p {
+    font-size: 0.75rem;
+    line-height: 120%; /* 0.9rem */
+    letter-spacing: 0.09763rem;
+  }
+
+  .mindful-living__link--btn img {
+    width: 7.22381rem;
+    height: 7.22381rem;
+  }
+
+  .mindful-living__link--btn p::after {
+    width: 5.61313rem;
+  }
+}

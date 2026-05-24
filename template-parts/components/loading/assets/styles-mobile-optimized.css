@@ -1,0 +1,220 @@
+/* Mobile-optimized loading styles */
+.page-loading {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: #fff;
+    z-index: 9999;
+    overflow: hidden;
+    transition: z-index 0.3s ease-out;
+}
+
+.loading__background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.loading__background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text content - optimized for mobile */
+.loading__content-text {
+    position: absolute;
+    top: 3rem;
+    left: 1.13rem;
+    opacity: 1;
+    will-change: transform, opacity;
+}
+
+.loading__content-line-1 {
+    font-kerning: none;
+    font-feature-settings: "salt" on;
+    font-family: SVN-Optima;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.08rem;
+    background: var(
+        --text-title-Gra-1,
+        linear-gradient(90deg, #2d6635 62.13%, #a0cc5a 85.78%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    will-change: transform, opacity;
+    /* Initial state for GSAP animation */
+    opacity: 0;
+    transform: translateX(-80%);
+}
+
+.loading__content-line-2 {
+    width: 23.1875rem;
+    text-align: center;
+    color: var(--text-title-Solid, #2d6635);
+    font-kerning: none;
+    font-family: SVN-Optima;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.06rem;
+    will-change: transform, opacity;
+    /* Initial state for GSAP animation */
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+/* Hide title on mobile */
+.loading__content-title {
+    display: none;
+}
+
+/* Ellipse container - mobile optimized */
+.loading-ellipse-container {
+    overflow: hidden;
+    position: absolute;
+    width: calc(21.125rem - 14.745px * 2);
+    height: calc(34.45219rem - 14.745px * 2);
+    bottom: -23.28rem;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 11.57694rem;
+    outline: 14.745px solid #cde3ce;
+    box-shadow: 0 -3.403px 2.268px 0 rgba(45, 102, 53, 0.88) inset;
+    will-change: transform, width, height;
+}
+
+.loading-ellipse-container-background {
+    position: absolute;
+    height: 100dvh;
+    bottom: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    will-change: transform;
+}
+
+.loading-ellipse-container-background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Logo - mobile optimized */
+.loading-logo {
+    z-index: 1;
+    position: absolute;
+    top: 9.69rem;
+    left: 50%;
+    transform: translateX(-50%);
+    will-change: transform, opacity;
+}
+
+.loading-logo-image {
+    width: auto;
+    height: 4.23063rem;
+    object-fit: contain;
+}
+
+/* Leaf elements - mobile optimized with will-change */
+.loading-leaf {
+    position: absolute;
+    width: auto;
+    height: auto;
+    will-change: transform;
+    filter: drop-shadow(0 -4.537px 49.679px rgba(0, 0, 0, 0.25)) inset;
+}
+
+.loading-leaf-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.loading-leaf--1 {
+    top: 1.59rem;
+    right: 0.62rem;
+    width: 22.40075rem;
+    height: 30.19281rem;
+}
+
+.loading-leaf--2 {
+    top: -15.8rem;
+    left: -16.7rem;
+    width: 31.87906rem;
+    height: 42.96813rem;
+    transform: rotate(-143.316deg);
+}
+
+.loading-leaf--3 {
+    bottom: 14.1rem;
+    right: 2.3rem;
+    width: 19.4825rem;
+    height: 25.36125rem;
+    transform: rotate(-173.601deg);
+}
+
+.loading-leaf--4 {
+    bottom: 1.88rem;
+    left: 0;
+    width: 33.99325rem;
+    height: 33.24894rem;
+    transform: rotate(-78.804deg);
+}
+
+.loading-leaf--5 {
+    top: 8.3rem;
+    left: 8.74rem;
+    width: 30.04581rem;
+    height: 37.56544rem;
+    transform: rotate(-3.223deg);
+}
+
+.loading-leaf--6 {
+    top: 11.7rem;
+    right: 4.47rem;
+    width: 20.77056rem;
+    height: 26.42481rem;
+}
+
+.loading-leaf--7 {
+    top: 9.7rem;
+    left: 1.46rem;
+    width: 22.72rem;
+    height: 30.6205rem;
+}
+
+/* Animation states - simplified for GSAP control */
+.page-loading.animate {
+    z-index: 99;
+}
+
+/* Performance optimizations */
+.loading__content-text,
+.loading__content-line-1,
+.loading__content-line-2,
+.loading-logo,
+.loading-leaf,
+.loading-ellipse-container {
+    transform: translateZ(0); /* Force hardware acceleration */
+    backface-visibility: hidden; /* Prevent flickering */
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .loading__content-text,
+    .loading__content-line-1,
+    .loading__content-line-2,
+    .loading-logo,
+    .loading-leaf,
+    .loading-ellipse-container {
+        transition: none !important;
+        animation: none !important;
+    }
+}

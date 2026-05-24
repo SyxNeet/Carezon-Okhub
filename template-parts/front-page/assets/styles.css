@@ -1,0 +1,43 @@
+@import url("../section-banner/assets/styles.css"); 
+@import url("../section-about-us/assets/styles.css");
+@import url("../section-experience/assets/styles.css");
+@import url("../section-mindful-living/assets/styles.css");
+@import url("../section-feedback-v2/assets/styles.css");
+@import url("../discount-section/assets/styles.css");
+@import url("../discount-section/assets/styles-mb.css");
+@import url("../section-news/assets/styles.css");
+@import url("../../components/blog-item/styles.css");
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+@media (max-width: 639.98px) {
+  main {
+    background: #FAF4EE;
+  }
+}
+
+/*main {*/
+/*    background: #FAF4EE;*/
+/*    position: relative;*/
+/*    background-image: url(/wp-content/uploads/2026/04/Home-3-scaled.webp);*/
+/*    background-size: cover;*/
+/*    background-position: center top;*/
+/*    background-repeat: no-repeat;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+/*@media (max-width: 639.98px) {*/
+/*  main {*/
+/*    background-image: url(/wp-content/uploads/2026/04/MB-HOME-scaled.webp);*/
+/*  }*/
+/*}*/

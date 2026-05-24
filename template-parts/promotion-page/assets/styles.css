@@ -1,0 +1,49 @@
+@import '../hero-section/assets/styles.css';
+@import '../gold-time-section/assets/styles.css';
+@import '../therapy-member-section/assets/styles.css';
+@import '../promotion-booking-section/assets/styles.css';
+
+@media (max-width: 640px) {
+    .footer.not-front .footer-top {
+    display: block !important;
+  }
+}
+
+.btn-vip-experience {
+  display: inline-flex !important;
+  min-width: 31.43774rem;
+  height: 3.5rem;
+  text-align:left;
+  align-items: center;
+  background: #2d6635;
+  padding: 0 0.5rem 0 1.5rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+/* Click button */
+.btn-vip-experience:active {
+  background: #12471a;
+}
+.btn-vip-experience:active .btn-vip-experience-text {
+  opacity: 0.8;
+}
+.btn-vip-experience:active .btn-icon::before {
+  background: #66a020;
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+}
+.btn-vip-experience:active .btn-vip-experience-icon svg, .btn-vip-experience:active .btn-icon img {
+  opacity: 0.8;
+  filter: brightness(0) invert(1);
+}
+
+.btn-vip-experience span {
+  margin-right: 1rem;
+  flex: 1;
+}

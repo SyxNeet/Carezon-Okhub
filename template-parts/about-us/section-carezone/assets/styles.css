@@ -1,0 +1,226 @@
+.section-carezone {
+  width: 100%;
+  height: 50.9375rem;
+  overflow: hidden;
+}
+.section-carezone .static-deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-carezone .background-sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-carezone .roof {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12.125rem;
+  object-fit: cover;
+  z-index: 8;
+}
+.section-carezone .background-green {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+/* Dinamic */
+.section-carezone .dynamic-deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-carezone .flash-light {
+  position: absolute;
+  top: -1.94rem;
+  left: -4.31rem;
+  width: 45.125rem;
+  height: 30.0625rem;
+  mix-blend-mode: plus-lighter;
+  z-index: 5;
+}
+.section-carezone .lachuoiblur {
+  position: absolute;
+  width: 27.04813rem;
+  height: 30.68169rem;
+  bottom: -9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+}
+.section-carezone .lachuoi-bottom-left {
+  position: absolute;
+  bottom: -37.5rem;
+  left: -5.5rem;
+  width: 39.91863rem;
+  height: 81.83563rem;
+  transform: rotate(-51.459deg);
+  z-index: 6;
+}
+.section-carezone .lachuoi-left {
+  position: absolute;
+  top: 1.97rem;
+  left: -6.31rem;
+
+  width: 26.99825rem;
+  height: 73.46694rem;
+  z-index: 2;
+}
+.section-carezone .lachuoi-right {
+  position: absolute;
+  top: 6.45rem;
+  left: 26.72rem;
+  width: 26.5725rem;
+  height: 31.91819rem;
+  /* width: 37.84763rem;
+  height: 45.46163rem;
+  bottom: -28.45rem;
+  left: 33.72rem; */
+
+  z-index: 2;
+}
+.section-carezone .carezone-content {
+  transform: none !important;
+  position: absolute;
+  top: 12.52rem;
+  left: 16.32rem;
+  width: 29.6875rem;
+  height: 38.6875rem;
+}
+.section-carezone .background-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 29.6875rem;
+  height: 40.8125rem;
+  z-index: 5;
+}
+.section-carezone .content-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 29.6875rem;
+  height: 38.6875rem;
+  border-radius: 62.5rem 62.5rem 0 0;
+  background: linear-gradient(180deg, #4a6e24 0%, #182c12 100%);
+  box-shadow: 0 -5px 75.3px 0 rgba(0, 0, 0, 0.82);
+}
+.section-carezone .deco-content {
+  position: absolute;
+
+  /* opacity: 0.27; */
+  mix-blend-mode: plus-lighter;
+  z-index: 7;
+}
+.section-carezone .deco-content-1 {
+  top: -11rem;
+  left: 20.19rem;
+  width: 30.37425rem;
+  height: 20.25963rem;
+  transform: rotate(-90deg);
+}
+.section-carezone .deco-content-2 {
+  top: 0;
+  left: 7.69rem;
+  width: 30.37425rem;
+  height: 20.25963rem;
+  transform: rotate(-20.284deg);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.section-carezone .deco-home {
+  position: absolute;
+  width: 78.5625rem;
+  height: 35.125rem;
+  bottom: 0;
+  right: 0;
+}
+
+.section-carezone .carezone-content___wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  margin-top: 0.81rem;
+  padding: 5rem 0;
+  z-index: 9;
+}
+
+.section-carezone .carezone-content__logo {
+  width: 17.01625rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.section-carezone .carezone-content__text {
+  margin-top: 2.875rem;
+  text-align: center;
+
+  /* PC/Body/18/18-R */
+  font-family: SVN-Optima;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.6875rem */
+  background: linear-gradient(180deg, #fbffe9 0%, #bdcea9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 24rem;
+}
+
+@media (max-width: 639.98px) {
+  .section-carezone {
+    height: auto;
+  }
+  .section-carezone .roof {
+    right: -3rem;
+    left: unset;
+    width: 55.875rem;
+    height: 6.8125rem;
+  }
+  .section-carezone .content-mb {
+    position: relative;
+    width: 100%;
+    height: 48.8125rem;
+    z-index: 5;
+    padding-top: 12.61rem;
+  }
+  .section-carezone .background-mb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .section-carezone .carezone-content___wrapper {
+    margin-top: 0;
+  }
+  .section-carezone .carezone-content__logo {
+    width: 12.86513rem;
+    height: 3.40219rem;
+  }
+  .section-carezone .carezone-content__text {
+    width: 18.14519rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.3125rem */
+  }
+}

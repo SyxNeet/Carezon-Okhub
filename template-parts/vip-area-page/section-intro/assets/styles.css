@@ -1,0 +1,230 @@
+.section-intro {
+  /* height: 114.35819rem; */
+  padding-top: 3.44rem;
+}
+
+.section-intro__background--desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section-intro__background--mobile {
+  display: none;
+}
+
+.section-intro__container {
+  position: relative;
+  z-index: 3;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 14.24rem 0 7.81rem;
+  display: flex;
+}
+
+.section-intro__content {
+  display: flex;
+  width: 39.3125rem;
+  flex-direction: column;
+}
+
+.section-intro__label {
+  color: rgba(58, 48, 38, 0.8);
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Pleasent;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 1.5rem;
+}
+
+.section-intro__heading {
+  color: #2d6635;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.0375rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-intro__description {
+  color: rgba(58, 48, 38, 0.8);
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.02rem;
+}
+
+.section-intro__vip-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 26.07694rem;
+  height: 41.8125rem;
+  border-radius: 1.687rem;
+  /*border: 1.227px solid #fff;*/
+  /*background: linear-gradient(*/
+  /*  180deg,*/
+  /*  rgba(255, 255, 255, 0.57) 0%,*/
+  /*  rgba(255, 255, 255, 0.3) 91.29%*/
+  /*);*/
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 90.66%);
+  padding: 0.625rem;
+  margin-left: 12.875rem;
+}
+
+.section-intro__vip-card-image {
+  width: 100%;
+  height: 20.125rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1.8125rem;
+}
+
+.section-intro__vip-card-image.mobile {
+  display: none;
+}
+
+.section-intro__vip-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.9375rem;
+}
+
+.section-intro__vip-card-title {
+  color: #113917;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -0.0375rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-intro__vip-card-description {
+  color: #3a3026;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.03rem;
+}
+
+@media (max-width: 640px) {
+  .section-intro {
+    padding: 2.5rem 1rem 0;
+  }
+
+  .section-intro__background--desktop {
+    display: none;
+  }
+
+  .section-intro__background--mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .section-intro__container {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .section-intro__content {
+    width: 100%;
+  }
+
+  .section-intro__label {
+    color: #a3a3a3;
+    font-size: 3rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .section-intro__heading {
+    font-size: 1.375rem;
+    letter-spacing: -0.0625rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #2d6635 62.13%, #a0cc5a 85.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-intro__description {
+    color: #3a3026;
+    font-size: 0.875rem;
+    line-height: 150%;
+    letter-spacing: normal;
+  }
+
+  .section-intro__vip-card {
+    width: 100%;
+    height: 33.0625rem;
+    border-radius: 1.25rem;
+    /*border: 1.227px solid #fff;*/
+    border-radius: 1.25rem;
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 90.66%);
+    padding: 0.625rem 0.56rem;
+    margin: 1.5rem 0 0;
+  }
+
+  .section-intro__vip-card-image {
+    display: none;
+  }
+  
+  .section-intro__vip-card-image.mobile {
+    display: block;
+    width: 100%;
+    height: 13.47663rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.125rem;
+  }
+
+  .section-intro__vip-card-content {
+    padding: 0 1.25rem;
+  }
+
+  .section-intro__vip-card-title {
+    font-size: 1.5rem;
+    line-height: 120%;
+    letter-spacing: -0.03rem;
+    margin-bottom: 0.625rem;
+    background: linear-gradient(90deg, #113917 0%, #95914e 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-intro__vip-card-description {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.0225rem;
+  }
+}

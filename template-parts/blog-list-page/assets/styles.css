@@ -1,0 +1,16 @@
+@import url("../section-banner/styles.css");
+@import url("../section-blog-featured/styles.css");
+@import '../list_blog/assets/styles.css';
+@import '../../components/blog-item/styles.css';
+main {
+    font-family: SVN-Optima;
+    position: relative;
+    padding: 0;
+    background: #FDF7F1;
+}
+
+@media (max-width: 639.98px) {
+    main {
+        background: #fff7f0;
+    }
+}

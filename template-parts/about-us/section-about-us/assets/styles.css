@@ -1,0 +1,643 @@
+.section-about-us {
+}
+
+.section-about-us__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12.79419rem;
+  height: 21.71888rem;
+  object-fit: contain;
+  object-position: left;
+  mix-blend-mode: multiply;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.section-about-us__container {
+  position: relative;
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.section-about-us__left {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.section-about-us__content {
+  display: flex;
+  width: 45.125rem;
+  padding: 6.25rem 7.8125rem 0;
+  flex-direction: column;
+}
+
+.section-about-us__title {
+  color: rgba(67, 78, 68, 0.3);
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Pleasent;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.section-about-us__description {
+  color: #2d6635;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.08rem;
+}
+
+/* Right animation */
+.section-about-us__anim {
+  position: relative;
+  width: 44.47525rem;
+  height: 36.67475rem;
+  margin-left: 2.56rem;
+}
+
+.box {
+  position: absolute;
+  z-index: 2;
+  top: 8.52rem;
+  left: 0;
+  width: 40.03831rem;
+  height: 24.55688rem;
+  /* aspect-ratio: 623 / 422; */
+  background: transparent;
+  mask-image: url("/wp-content/uploads/2026/05/oval-1.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+
+.section-about-us__anim-flower-top {
+  position: absolute;
+  top: 7.75rem;
+  left: 28.19rem;
+  width: 14.31388rem;
+  height: 13.05313rem;
+  object-fit: contain;
+}
+
+.section-about-us__anim-shadow {
+  position: absolute;
+  width: 40.03831rem;
+  height: 24.55688rem;
+  top: 3.14rem;
+  left: -2.2rem;
+}
+
+.section-about-us__anim-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.section-about-us__anim-inner {
+  position: absolute;
+  top: -1.75rem;
+  left: 0.5rem;
+  width: 39.13525rem;
+  height: 28.14994rem;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.section-about-us__anim-outer {
+  position: absolute;
+  top: 16.22rem;
+  right: 2.5rem;
+  width: 13.40625rem;
+  height: 18.47319rem;
+  object-fit: contain;
+  z-index: 3;
+}
+
+.section-about-us__anim-pattern {
+  position: absolute;
+  top: 0.75rem;
+  left: 4.375rem;
+  /* transform: translateX(-50%); */
+  width: 32.25894rem;
+  height: 35.25688rem;
+  object-fit: contain;
+  z-index: 5;
+}
+
+.section-about-us__anim-img {
+  position: absolute;
+  top: 3rem;
+  left: 1.75rem;
+  width: 37.67706rem;
+  height: 30.81594rem;
+  object-fit: contain;
+  z-index: 6;
+}
+
+.section-about-us__anim-flower-bottom {
+  position: absolute;
+  top: 27.31rem;
+  left: 7.06rem;
+  width: 8.5625rem;
+  height: 8.9375rem;
+  object-fit: contain;
+  z-index: 6;
+}
+
+.section-about-us__image {
+  display: none;
+}
+
+.section-about-us__right {
+  width: 43.25rem;
+  margin: 5.81rem 2.75rem 0 auto;
+}
+
+.section-about-us__circle-wrapper {
+  position: relative;
+  width: 31.82375rem;
+  height: 36.4375rem;
+  margin: 0 auto;
+}
+
+.section-about-us__circle-wrapper-bg {
+  position: absolute;
+  top: 2.1rem;
+  left: 7.37rem;
+  width: 14.58356rem;
+  height: 34.3355rem;
+  object-fit: contain;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.section-about-us__circle-wrapper-logo {
+  position: absolute;
+  top: 17.18rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5.58038rem;
+  height: 1.47575rem;
+  object-fit: contain;
+}
+
+.section-about-us__circle {
+  position: absolute;
+  width: 20.40519rem;
+  height: 20.40519rem;
+  border-radius: 20.40519rem;
+  border: 0.584px solid #829584;
+}
+
+.about-us__right-circle-1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-us__right-circle-2 {
+  top: 12.3rem;
+  left: 0;
+  transform: none;
+}
+
+.about-us__right-circle-3 {
+  top: 12.3rem;
+  right: 0;
+  transform: none;
+}
+
+.section-about-us__circle-dot {
+  width: 0.40738rem;
+  height: 0.40738rem;
+  background: #829584;
+}
+
+/* Circle 2 Dot Positions */
+.about-us__right-circle-2 .section-about-us__circle-dot--1 {
+  position: absolute;
+  top: 0.58rem;
+  left: 5.94rem;
+  transform: rotate(26.193deg);
+}
+.about-us__right-circle-2 .section-about-us__circle-dot--2 {
+  position: absolute;
+  top: 0.6rem;
+  left: 25.41rem;
+  transform: rotate(-22.059deg);
+}
+.about-us__right-circle-2 .section-about-us__circle-dot--3 {
+  position: absolute;
+  top: 7.02rem;
+  left: 19.7rem;
+  transform: rotate(-64.859deg);
+}
+.about-us__right-circle-2 .section-about-us__circle-dot--4 {
+  position: absolute;
+  top: 18.44rem;
+  left: 15.71rem;
+}
+
+/* Circle 3 Dot Positions */
+.about-us__right-circle-3 .section-about-us__circle-dot--1 {
+  position: absolute;
+  top: 6.93rem;
+  left: 0.2rem;
+  transform: rotate(-26.837deg);
+}
+.about-us__right-circle-3 .section-about-us__circle-dot--2 {
+  position: absolute;
+  top: 1.5rem;
+  left: 4.23rem;
+  transform: rotate(-45deg);
+}
+
+/* Circle Text Positions */
+.section-about-us__circle-text--1 {
+  position: absolute;
+  top: 7.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-about-us__circle-text--2 {
+  position: absolute;
+  top: 25.88rem;
+  left: 4.5rem;
+}
+.section-about-us__circle-text--3 {
+  position: absolute;
+  top: 25.64rem;
+  right: 4.98rem;
+}
+
+/* Circle Images */
+.section-about-us__circle-image--1 {
+  position: absolute;
+  top: 1.91rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5.18531rem;
+  height: 6.07906rem;
+}
+.section-about-us__circle-image--2 {
+  position: absolute;
+  top: 19.64rem;
+  left: 3.9rem;
+  width: 5.18531rem;
+  height: 5.22131rem;
+}
+.section-about-us__circle-image--3 {
+  position: absolute;
+  top: 19.77rem;
+  right: 3.78rem;
+  width: 5.19025rem;
+  height: 4.71706rem;
+}
+
+.section-about-us__circle-text {
+  color: #295d2f;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.0375rem;
+}
+
+.section-about-us__info {
+  display: flex;
+  align-items: center;
+}
+
+.section-about-us__info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 21.125rem;
+  margin-right: 2.5rem;
+}
+
+.section-about-us__info-heading {
+  color: #3a3026;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: -0.0375rem;
+  margin-bottom: 0.3125rem;
+}
+
+.section-about-us__info-description {
+  color: #3a3026;
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.02rem;
+}
+
+.section-about-us__action {
+  position: relative;
+  width: 19.625rem;
+  height: 13.125rem;
+}
+
+.section-about-us__link {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  display: flex;
+  width: 11.25rem;
+  height: 11.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5.5rem;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-out;
+}
+
+.section-about-us__link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5.5rem;
+  background: radial-gradient(
+    120.17% 120.17% at 15.93% -15.88%,
+    #e6fbe0 8.65%,
+    #113917 89.9%
+  );
+}
+
+.section-about-us__link-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9.25rem;
+  height: 9.25rem;
+  object-fit: cover;
+  border-radius: 4.625rem;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.section-about-us__link-text {
+  position: relative;
+  z-index: 2;
+  width: 6.19381rem;
+  color: #f7f7f7;
+  text-align: center;
+  font-family: SVN-Optima;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.section-about-us__action-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12.125rem;
+  height: 13.125rem;
+  object-fit: contain;
+}
+
+@media (min-width: 1024px) {
+  .section-about-us__link:hover {
+    box-shadow: 0 -1px 52.5px 0 rgba(243, 221, 113, 0.77);
+  }
+}
+
+/* Mobile  */
+@media (max-width: 640px) {
+  .section-about-us {
+  }
+  
+  .section-about-us__decor {
+    display: none;
+  }
+
+  .section-about-us__container {
+    flex-direction: column;
+  }
+
+  .section-about-us__left {
+    padding: 3rem 1rem 0;
+  }
+
+  .section-about-us__content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .section-about-us__title {
+    color: #a3a3a3;
+    font-size: 3rem;
+    margin-bottom: 0.125rem;
+  }
+
+  .section-about-us__description {
+    font-size: 1.375rem;
+    letter-spacing: -0.0625rem;
+    background: linear-gradient(90deg, #2d6635 62.13%, #a0cc5a 85.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Right animation */
+  .section-about-us__anim {
+    display: none;
+  }
+
+  .section-about-us__image {
+    display: block;
+    width: calc(100% + 2rem);
+    height: 19.37838rem;
+    margin: 1.64rem 0 1.43rem -1rem;
+    object-fit: contain;
+  }
+
+  .section-about-us__right {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 3.75rem 0 0;
+  }
+
+  .section-about-us__circle-wrapper {
+    width: 100%;
+    height: 21.90531rem;
+  }
+  
+  .section-about-us__circle-wrapper-bg {
+    display: none;
+  }
+
+  .section-about-us__circle-wrapper-logo {
+    top: 11.5rem;
+    width: 3.73619rem;
+    height: 0.98806rem;
+  }
+
+  /* Circle */
+  .section-about-us__circle {
+    width: 13.66169rem;
+    height: 13.66169rem;
+    border: 0.391px solid #829584;
+  }
+
+  .about-us__right-circle-2 {
+    top: 8.23rem;
+  }
+
+  .about-us__right-circle-3 {
+    top: 8.23rem;
+  }
+
+  .section-about-us__circle-dot {
+    width: 0.27275rem;
+    height: 0.27275rem;
+  }
+
+  /* Circle 2 Dot Positions */
+  .about-us__right-circle-2 .section-about-us__circle-dot--1 {
+    top: 0.39rem;
+    left: 3.98rem;
+  }
+  .about-us__right-circle-2 .section-about-us__circle-dot--2 {
+    top: 0.4rem;
+    left: 17.01rem;
+  }
+  .about-us__right-circle-2 .section-about-us__circle-dot--3 {
+    top: 4.7rem;
+    left: 13.19rem;
+  }
+  .about-us__right-circle-2 .section-about-us__circle-dot--3 {
+    top: 12.34rem;
+    left: 10.52rem;
+  }
+
+  /* Circle 3 Dot Positions */
+  .about-us__right-circle-3 .section-about-us__circle-dot--1 {
+    top: 4.64rem;
+    left: 0.13rem;
+  }
+  .about-us__right-circle-3 .section-about-us__circle-dot--2 {
+    top: 1.01rem;
+    left: 2.83rem;
+  }
+
+  /* Circle Text Positions */
+  .section-about-us__circle-text--1 {
+    top: 1.29rem;
+  }
+  .section-about-us__circle-text--2 {
+    top: 4.91rem;
+    left: 2.61rem;
+  }
+  .section-about-us__circle-text--3 {
+    top: 5rem;
+    right: 2.53rem;
+  }
+
+  /* Circle Images */
+  .section-about-us__circle-image--1 {
+    width: 3.47169rem;
+    height: 4.07006rem;
+  }
+  .section-about-us__circle-image--2 {
+    width: 3.47169rem;
+    height: 3.49575rem;
+  }
+  .section-about-us__circle-image--3 {
+    width: 3.475rem;
+    height: 3.15819rem;
+  }
+
+  .section-about-us__circle-text {
+    font-size: 1.375rem;
+    letter-spacing: -0.0625rem;
+  }
+
+  .section-about-us__info {
+    align-items: start;
+    flex-direction: column;
+    margin-top: 3.75rem;
+  }
+
+  .section-about-us__info-content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .section-about-us__info-heading {
+    font-size: 1.375rem;
+    letter-spacing: -0.0275rem;
+  }
+
+  .section-about-us__action {
+    width: 11.5rem;
+    height: 7.625rem;
+    margin: 0 auto;
+  }
+
+  .section-about-us__link {
+    top: 0.12rem;
+    left: 0.12rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 3.75rem;
+  }
+
+  .section-about-us__link::after {
+    background: radial-gradient(
+      120.17% 120.17% at 15.93% -15.88%,
+      #e6fbe0 0%,
+      #824508 62.97%
+    );
+  }
+
+  .section-about-us__link-bg {
+    width: 6.30681rem;
+    height: 6.30681rem;
+    border-radius: 3.15344rem;
+  }
+
+  .section-about-us__link-text {
+    width: 5.58669rem;
+    font-size: 0.59656rem;
+  }
+
+  .section-about-us__action-image {
+    top: 0.25rem;
+    width: 6.5625rem;
+    height: 7.11394rem;
+  }
+}
