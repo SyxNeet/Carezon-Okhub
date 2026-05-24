@@ -31,8 +31,8 @@ if (empty($slides)) {
     $slides = [
         [
             'tab_label' => 'Jjimjillbang là gì ?',
-            'title'     => 'Jjimjillbang – Không Gian Thư Giãn Và Chăm Sóc Sức Khỏe Toàn Diện',
-            'content'   => 'Jjimjillbang là mô hình spa Hàn Quốc kết hợp tắm xông hơi, thư giãn và chăm sóc sức khỏe trong một không gian ấm cúng, giúp cơ thể detox và tinh thần được nghỉ ngơi.',
+            'title'     => 'Jjim Jil Bang là một loại spa truyền thống của Hàn Quốc, nổi bật với các phòng xông hơi và nhiệt trị liệu. Đây là nơi khách hàng có thể thư giãn, thải độc, và phục hồi cơ thể',
+            'content'   => 'Các phương pháp xông hơi như xông hơi ướt, khô, và thảo mộc. Các phòng xông hơi trong Jjim Jil Bang được thiết kế với nhiệt độ cao và không gian yên tĩnh, giúp cải thiện tuần hoàn máu, giảm căng thẳng, làm sạch da và hỗ trợ quá trình phục hồi cơ thể.',
             'image'     => ['url' => 'https://carezone.vn/wp-content/uploads/2026/05/image-1888.png', 'alt' => 'Jjimjillbang Carezone'],
         ],
         [
@@ -62,11 +62,6 @@ $slide_count = count($slides);
         <div class="section-about__inner">
 
             <div class="section-about__label-col">
-                <div class="section-about__label">
-                    <span class="subtitle"><?php echo esc_html($subtitle); ?></span>
-                    <span class="section-about__label-text"><?php echo esc_html($label); ?></span>
-                </div>
-
                 <?php if ($slide_count > 1) : ?>
                     <nav class="section-about__tabs" aria-label="<?php esc_attr_e('Danh mục câu chuyện', 'okhub-theme'); ?>">
                         <?php foreach ($slides as $i => $slide) : ?>

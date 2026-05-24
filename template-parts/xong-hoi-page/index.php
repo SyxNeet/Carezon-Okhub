@@ -1,6 +1,7 @@
 <?php
 get_template_part('template-parts/xong-hoi-page/section-banner/index');
 get_template_part('template-parts/xong-hoi-page/section-story/index');
+get_template_part('template-parts/xong-hoi-page/section-process/index');
 get_template_part('template-parts/xong-hoi-page/section-services/index');
 get_template_part('template-parts/xong-hoi-page/section-offers/index');
 get_template_part('template-parts/xong-hoi-page/section-stay/index');
