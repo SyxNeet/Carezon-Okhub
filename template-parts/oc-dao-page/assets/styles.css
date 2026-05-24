@@ -1,0 +1,12 @@
+@import url("../section-banner/assets/styles.css");
+@import url("../section-story/assets/styles.css");
+@import url("../section-services/assets/styles.css");
+@import url("../section-offers/assets/styles.css");
+@import url("../../components/special-offers/assets/styles.css");
+/* @import url("../section-feedback/assets/styles.css"); */
+@import url("../section-gallery/assets/styles.css");
+@import url("../section-forms/assets/styles.css");
+
+main {
+  background: #fff;
+}

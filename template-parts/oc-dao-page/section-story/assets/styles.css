@@ -1,0 +1,459 @@
+/* =============================================================
+   Section About — Restaurant Page
+   Desktop-first, breakpoint: @media screen and (max-width: 639.98px)
+   rem = figma_px / 16
+   ============================================================= */
+
+.section-about {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 5.625rem; /* ~90px vertical center offset */
+  padding-bottom: 10.625rem;
+  z-index: 10;
+}
+
+.section-about .background_story {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Background gradient overlay */
+.section-about__bg-gradient {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 55.9375rem; /* 895px / 16 */
+  top: 1.625rem; /* 26px / 16 */
+  opacity: 0.45;
+  background-image:
+    linear-gradient(
+      -14.8993deg,
+      rgba(255, 255, 255, 0) 15.042%,
+      rgba(255, 255, 255, 1) 61.26%
+    ),
+    linear-gradient(
+      186.822deg,
+      rgba(255, 255, 255, 0) 47.523%,
+      rgba(255, 255, 255, 1) 70.178%
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Lotus decoration — left side */
+.section-about__lotus {
+  position: absolute;
+  left: -3.2rem;
+  top: 20.625rem;
+  width: 21.5625rem;
+  height: 31.875rem;
+  opacity: 0.23;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Individual lotus group positions (from Figma inset percentages of 345×510 container) */
+/* inset: top right bottom left */
+.section-about__lotus-g1 {
+  position: absolute;
+  top: 23.92%;
+  right: 63.61%;
+  bottom: 43.71%;
+  left: 20.87%;
+}
+
+.section-about__lotus-g2 {
+  position: absolute;
+  top: 24.77%;
+  right: 0;
+  bottom: 20.18%;
+  left: 55.35%;
+}
+
+.section-about__lotus-g3 {
+  position: absolute;
+  top: 0;
+  right: 10.13%;
+  bottom: 28.82%;
+  left: 0;
+}
+
+.section-about__lotus-g4 {
+  position: absolute;
+  top: 34.27%;
+  right: 0.38%;
+  bottom: 11.64%;
+  left: 27.91%;
+}
+
+.section-about__lotus-g5 {
+  position: absolute;
+  top: 10.36%;
+  right: 17.73%;
+  bottom: 23.36%;
+  left: 26.33%;
+}
+
+.section-about__lotus-g6 {
+  position: absolute;
+  top: 54.9%;
+  right: 35.82%;
+  bottom: 6.86%;
+  left: 6.67%;
+}
+
+.section-about__lotus-g7 {
+  position: absolute;
+  top: 43.54%;
+  right: 10.05%;
+  bottom: 0;
+  left: 66.1%;
+}
+
+.section-about__lotus-g1 img,
+.section-about__lotus-g2 img,
+.section-about__lotus-g3 img,
+.section-about__lotus-g4 img,
+.section-about__lotus-g5 img,
+.section-about__lotus-g6 img,
+.section-about__lotus-g7 img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Main container — inner */
+.section-about__container {
+  position: relative;
+  z-index: 2;
+  max-width: 100rem; /* 1600px */
+  margin-inline: auto;
+  padding-left: 7.8125rem; /* 125px / 16 */
+  padding-right: 7.8125rem; /* 125px / 16 */
+}
+
+/* Top row: label + content side by side */
+.section-about__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Label column — left, 141px wide */
+.section-about__label-col {
+  flex-shrink: 0;
+  width: 11.5625rem; /* 141px / 16 */
+  padding-top: 0.375rem; /* align with text baseline */
+}
+
+.section-about__label {
+  display: flex;
+  flex-direction: column;
+}
+.section-about__label .subtitle {
+  color: var(--text-Body-600, var(--Text-600, rgba(58, 48, 38, 0.6)));
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Optima;
+  font-size: 1rem;
+  line-height: 160%; /* 1.6rem */
+  letter-spacing: -0.02rem;
+  text-transform: uppercase;
+}
+.section-about__label-dot {
+  flex-shrink: 0;
+  width: 0.5rem; /* 8px / 16 */
+  height: 0.5rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #cd9660 0%, #2c2117 100%);
+  margin-right: 0.6875rem; /* 11px / 16 */
+}
+
+.section-about__label-text {
+  font-kerning: none;
+  font-feature-settings: "salt" on;
+  font-family: SVN-Pleasent;
+  font-size: 3rem;
+  line-height: normal;
+  background: var(
+    --text-title-c-o,
+    linear-gradient(90deg, #177e26 -2.26%, #ffd097 117.46%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Right content column — 1112px wide */
+.section-about__content-col {
+  flex-shrink: 0;
+  width: 69.5rem; /* 1112px / 16 */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Text block — left side of content col, 444px wide */
+.section-about__text-block {
+  flex-shrink: 0;
+  width: 31.4375rem; /* 444px / 16 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text group: description + paragraphs */
+.section-about__text-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem; /* gap 40px / 16 */
+}
+
+.section-about__description {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 1.875rem; /* 30px / 16 */
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.0375rem; /* -0.6px / 16 */
+  color: #2d6635;
+  margin-bottom: 1.5rem; /* gap 24px / 16 */
+  font-feature-settings:
+    "salt",
+    "kern" 0;
+}
+
+.section-about__paragraph {
+  font-family: "SVN-Optima", sans-serif;
+  font-size: 1rem; /* 16px / 16 */
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.02rem; /* -0.32px / 16 */
+  color: #3a3026;
+  font-feature-settings:
+    "salt",
+    "kern" 0;
+}
+
+.section-about__paragraph + .section-about__paragraph {
+  margin-top: 1.5rem; /* 24px / 16 */
+}
+
+/* Prev/next buttons */
+.section-about__nav {
+  display: flex;
+  align-items: center;
+}
+
+.section-about__nav-btn {
+  flex-shrink: 0;
+  width: 2.75rem; /* 44px / 16 */
+  height: 2.75rem;
+  border-radius: 0.7857rem; /* 12.571px / 16 */
+  border: 1px solid #f0fdf4;
+  background-color: rgba(166, 179, 172, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 400ms cubic-bezier(0.47, 0, 0.01, 1.01);
+}
+
+.section-about__nav-btn + .section-about__nav-btn {
+  margin-left: 0.75rem; /* 12px / 16 */
+}
+
+.section-about__nav-btn:focus-visible {
+  outline: 2px solid #2d6635;
+  outline-offset: 2px;
+}
+
+.section-about__nav-btn img {
+  width: 0.4929rem; /* 7.887px / 16 */
+  height: 0.9809rem; /* 15.695px / 16 */
+  display: block;
+}
+
+.section-about__nav-btn--prev img {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 1024px) {
+  .section-about__nav-btn:hover {
+    background-color: rgba(166, 179, 172, 0.28);
+    border-color: #2d6635;
+  }
+}
+
+/* Image carousel — right side, 546x546px */
+.section-about__carousel {
+  flex-shrink: 0;
+  position: relative;
+  width: 32.5rem; /* 546px / 16 */
+  height: 32.5rem;
+  border-radius: 1.5rem; /* 24px / 16 */
+  overflow: hidden;
+  margin-right: unset;
+}
+
+.section-about .deco__right {
+  position: absolute;
+  top: -0.2rem;
+  right: 0;
+  width: 9.58225rem;
+  height: 9.58225rem;
+  z-index: 5;
+}
+
+.section-about .deco__left {
+  position: absolute;
+  top: 14rem;
+  left: 0;
+  width: 23.60219rem;
+  height: 29.25694rem;
+  z-index: 5;
+}
+
+/* .swiper-wrapper — Swiper tự set display:flex + transform; chỉ cần chiều cao */
+.section-about__carousel-track {
+  height: 100%;
+}
+
+.section-about__carousel-slide {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-about__carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Decorative image group (food composition) — 1 ảnh phẳng export từ Figma */
+.section-about__deco-group {
+  position: absolute;
+  left: 50rem; /* 800px / 16 from section left edge */
+  top: 31.5rem; /* 504px / 16 from section top */
+  width: 20.625rem; /* 330px / 16 — bề ngang thực của composition (gồm phần tràn phải) */
+  pointer-events: none;
+  z-index: 3;
+}
+
+.section-about__deco-img {
+  display: block;
+  width: 100%;
+  height: auto; /* giữ tỉ lệ gốc 1070×666 */
+}
+
+/* ============================================================== */
+/* Mobile overrides — only properties that differ from desktop     */
+/* ============================================================== */
+@media screen and (max-width: 639.98px) {
+  .section-about {
+    padding-top: 0;
+    padding-bottom: 3rem; /* 48px / 16 */
+  }
+
+  .section-about__container {
+    padding-left: 1rem; /* 16px / 16 */
+    padding-right: 1rem;
+  }
+
+  .section-about__inner {
+    flex-direction: column;
+  }
+
+  /* Label col takes full width on mobile */
+  .section-about__label-col {
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 0.75rem; /* 12px / 16 */
+  }
+
+  /* Content col stacks vertically */
+  .section-about__content-col {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  /* Text block full width */
+  .section-about__text-block {
+    width: 100%;
+  }
+
+  .section-about__text-group {
+    margin-bottom: 0;
+  }
+
+  /* Description mobile: 16px Medium */
+  .section-about__description {
+    font-size: 1rem; /* 16px / 16 */
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: -0.03125rem; /* -0.5px / 16 */
+    margin-bottom: 0.75rem; /* 12px / 16 */
+  }
+
+  /* Body paragraphs mobile: 14px */
+  .section-about__paragraph {
+    font-size: 0.875rem; /* 14px / 16 */
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+  .section-about__paragraph + .section-about__paragraph {
+    margin-top: 0.75rem; /* 12px / 16 */
+  }
+
+  /* Nav buttons — 24px gap from text group, right-aligned */
+  .section-about__nav {
+    margin-top: 1.5rem; /* 24px / 16 — matches Figma mobile gap-[24px] */
+    align-self: flex-end;
+  }
+  .section-about .deco__right {
+    top: 27rem;
+    width: 4.58225rem;
+    height: 5.58225rem;
+  }
+  .section-about .deco__left {
+    top: 42rem;
+    width: 7.60219rem;
+    height: 11.25694rem;
+  }
+
+  /* Mobile image carousel: 343x343px, radius 12px */
+  .section-about__carousel {
+    width: 21.4375rem; /* 343px / 16 */
+    height: 21.4375rem;
+    border-radius: 0.75rem; /* 12px / 16 */
+    margin-top: 1.5rem; /* 24px / 16 */
+  }
+
+  /* Lotus decoration hidden on mobile */
+  .section-about__lotus {
+    display: none;
+  }
+
+  /* Deco group repositioned on mobile — vẫn 1 ảnh phẳng, height tự theo tỉ lệ */
+  .section-about__deco-group {
+    left: -0.4rem;
+    right: auto;
+    top: auto; /* clear desktop top: 31.5rem so bottom positioning takes effect */
+    bottom: 20.4rem; /* 288.17px / 16 */
+    width: 14.3rem; /* ~229px — tương ứng 210.24px nội dung + phần tràn phải */
+    display: none;
+  }
+}
