@@ -1,37 +1,58 @@
 /**
- * Section About — Image Carousel (Swiper)
- * Restaurant Page
- * Swiper là global (enqueue từ CDN), không import module.
- * Self-execute vì orchestrator chỉ side-effect import (không gọi hàm).
+ * Section Story — unified slider (text + image + tabs)
  */
 
 export function sectionStoryScript() {
-    document.querySelectorAll('#section-about').forEach((section) => {
-        const carousel = section.querySelector('.section-about__carousel');
-        if (!carousel || typeof Swiper === 'undefined') return;
+  document.querySelectorAll('#section-about').forEach((section) => {
+    const slider = section.querySelector('.section-about__slider');
+    if (!slider || typeof Swiper === 'undefined') return;
 
-        const slides = carousel.querySelectorAll('.section-about__carousel-slide');
-        if (slides.length <= 1) return; // 1 ảnh thì không cần khởi tạo
+    const slides = slider.querySelectorAll('.section-about__slide');
+    const tabs = section.querySelectorAll('.section-about__tab');
+    if (slides.length <= 1) return;
 
-        new Swiper(carousel, {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            loop: true,
-            speed: 600,
-            grabCursor: true,
-            watchOverflow: true,
+    const updateTabs = (activeIndex) => {
+      tabs.forEach((tab, index) => {
+        const isActive = index === activeIndex;
+        tab.classList.toggle('is-active', isActive);
+        tab.setAttribute('aria-current', isActive ? 'true' : 'false');
+      });
+    };
 
-            navigation: {
-                prevEl: section.querySelector('.section-about__nav-btn--prev'),
-                nextEl: section.querySelector('.section-about__nav-btn--next'),
-            },
-
-            keyboard: {
-                enabled: true,
-                onlyInViewport: true,
-            },
-        });
+    const storySwiper = new Swiper(slider, {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      speed: 600,
+      grabCursor: true,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true,
+      },
+      navigation: {
+        prevEl: section.querySelector('.section-about__nav-btn--prev'),
+        nextEl: section.querySelector('.section-about__nav-btn--next'),
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+      on: {
+        init(swiper) {
+          updateTabs(swiper.realIndex);
+        },
+        slideChange(swiper) {
+          updateTabs(swiper.realIndex);
+        },
+      },
     });
-}
 
-// NOTE: KHÔNG tự execute. Orchestrator restaurant-page/assets/scripts.js gọi.
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const index = Number(tab.dataset.slideIndex);
+        if (Number.isNaN(index)) return;
+        storySwiper.slideToLoop(index);
+      });
+    });
+  });
+}
