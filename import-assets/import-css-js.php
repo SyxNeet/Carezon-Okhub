@@ -403,6 +403,25 @@ function wp_enqueue_local()
             'in_footer' => true,
             'condition' => is_page_template('oc-dao-page.php')
         ],
+        // ===== Xong Hỏi Page =====
+        [
+            'type' => 'style',
+            'handle' => 'xong-hoi-page',
+            'src' => get_theme_file_uri('/template-parts/xong-hoi-page/assets/styles.css'),
+            'deps' => [],
+            'ver' => THEME_VERSION,
+            'in_footer' => false,
+            'condition' => is_page_template('xong-hoi-page.php')
+        ],
+        [
+            'type' => 'script',
+            'handle' => 'xong-hoi-page',
+            'src' => get_theme_file_uri('/template-parts/xong-hoi-page/assets/scripts.js'),
+            'deps' => [],
+            'ver' => THEME_VERSION,
+            'in_footer' => true,
+            'condition' => is_page_template('xong-hoi-page.php')
+        ],
     ];
 
     foreach ($wp_enqueue_mapping as $wp_enqueue) {
@@ -425,7 +444,7 @@ function add_type_attribute($tag, $handle, $src)
 {
     // if not your script, do nothing and return original $tag
     // if ('front-page' !== $handle && 'offcanvas' !== $handle) {
-    $module_handles = ['front-page', "pricing-page", "contact-page", "blog-detail-page", "blog-list-page", "about-us", "onsen-page", "careers-page", "career-detail-page", "vip-area-page", "promotion-page", "restaurant-page", "oc-dao-page"];
+    $module_handles = ['front-page', "pricing-page", "contact-page", "blog-detail-page", "blog-list-page", "about-us", "onsen-page", "careers-page", "career-detail-page", "vip-area-page", "promotion-page", "restaurant-page", "oc-dao-page", "xong-hoi-page"];
     if (!in_array($handle, $module_handles, true)) {
         return $tag;
     }
