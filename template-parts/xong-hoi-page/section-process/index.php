@@ -144,8 +144,20 @@ $get_image_url = static function ($image) {
             loading="lazy"
             decoding="async">
         <img
+            class="section-process-mobile__cherry section-process__building--left"
+            src="<?php echo esc_url($asset_base . '/decor_left_mobile.png'); ?>"
+            alt=""
+            loading="lazy"
+            decoding="async">
+        <img
             class="section-process__cherry section-process__cherry--right"
             src="<?php echo esc_url($asset_base . '/cherry-2.png'); ?>"
+            alt=""
+            loading="lazy"
+            decoding="async">
+        <img
+            class="section-process-mobile__cherry section-process__flower--right"
+            src="<?php echo esc_url($asset_base . '/decor_right_mobile.png'); ?>"
             alt=""
             loading="lazy"
             decoding="async">
