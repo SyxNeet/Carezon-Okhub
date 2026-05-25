@@ -55,12 +55,22 @@ $slide_count = count($slides);
 
 <section id="section-about" class="section-about">
     <img src="https://carezone.vn/wp-content/uploads/2026/05/Object-1-1-1.png" alt="" class="deco__right">
-    <img src="https://carezone.vn/wp-content/uploads/2026/05/Leaf.png" alt="" class="deco__left">
+    <img src="https://carezone.vn/wp-content/uploads/2026/05/Leaf-1.png" alt="" class="deco__left">
     <img class="background_story" src="https://carezone.vn/wp-content/uploads/2026/05/74cd0d727e5e73f2b09b94110f9b33d7-1.png" alt="">
 
     <div class="section-about__container">
+        
         <div class="section-about__inner">
 
+        <?php if(!isMobileDevice()): ?>
+            <div class="btn__book__group">
+                <div class="btn__book__group-item">
+                    <img src="https://carezone.vn/wp-content/uploads/2026/05/Link.svg" alt="">
+                    <p>Đặt lịch </br> ngay hôm nay</p>
+                </div>
+                <img src="https://carezone.vn/wp-content/uploads/2026/05/Info-Image.svg" alt="" class="decor__image">
+            </div>
+        <?php endif;?>
             <div class="section-about__label-col">
                 <?php if ($slide_count > 1) : ?>
                     <nav class="section-about__tabs" aria-label="<?php esc_attr_e('Danh mục câu chuyện', 'okhub-theme'); ?>">
@@ -73,6 +83,9 @@ $slide_count = count($slides);
                                 <span class="section-about__tab-dot" aria-hidden="true"></span>
                                 <span class="section-about__tab-text"><?php echo esc_html($slide['tab_label'] ?? ''); ?></span>
                             </button>
+                            <?php if (isMobileDevice() && $i < $slide_count - 1) : ?>
+                                <div class="line__mobile"></div>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </nav>
                 <?php endif; ?>
@@ -101,6 +114,15 @@ $slide_count = count($slides);
                                         <?php endif; ?>
                                     </div>
                                 </div>
+                                <?php if(isMobileDevice()): ?>
+                                <div class="btn__book__group">
+                                    <div class="btn__book__group-item">
+                                        <img src="https://carezone.vn/wp-content/uploads/2026/05/Link.svg" alt="">
+                                        <p>Đặt lịch </br> ngay hôm nay</p>
+                                    </div>
+                                    <img src="https://carezone.vn/wp-content/uploads/2026/05/Info-Image.svg" alt="" class="decor__image">
+                                </div>
+                                <?php endif; ?>
 
                                 <div class="section-about__media">
                                     <?php if ($image_id) : ?>
@@ -156,18 +178,18 @@ $slide_count = count($slides);
                     </div>
                 <?php endif; ?>
             </div>
-
+        <div class="section-about__deco-group" aria-hidden="true">
+            <img
+                src="https://carezone.vn/wp-content/uploads/2026/05/Frame-2147263488-1.png"
+                alt=""
+                aria-hidden="true"
+                class="section-about__deco-img"
+                width="1070"
+                height="666"
+                loading="lazy">
+        </div>
         </div>
     </div>
 
-    <div class="section-about__deco-group" aria-hidden="true">
-        <img
-            src="https://carezone.vn/wp-content/uploads/2026/05/group_1.webp"
-            alt=""
-            aria-hidden="true"
-            class="section-about__deco-img"
-            width="1070"
-            height="666"
-            loading="lazy">
-    </div>
+    
 </section>

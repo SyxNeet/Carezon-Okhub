@@ -43,6 +43,20 @@
   -webkit-text-fill-color: transparent;
 }
 
+.special-offer__list-container-content-bottom {
+  background: var(--Foundation-Brown-yellow-100, #f2ece3);
+}
+.special-offer__list-container-content-bottom-head-progress,
+.special-offer__list-container-content-image-content-progress-progress {
+  background: var(
+    --u-i-Process-Brown,
+    linear-gradient(90deg, #fcda84 27.14%, #a20f0f 100%)
+  );
+}
+.special-offer__list-container-content-image-content-progress-text {
+  top: 50%;
+}
+
 @media (max-width: 640px) {
   .onsen-offers {
     margin-bottom: 3.75rem;
