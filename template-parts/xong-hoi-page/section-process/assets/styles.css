@@ -558,6 +558,10 @@
   object-fit: contain;
 }
 
+.section-process-mobile__cherry {
+  display: none;
+}
+
 @media screen and (max-width: 639.98px) {
   .section-process__shell {
     padding: 1rem;
